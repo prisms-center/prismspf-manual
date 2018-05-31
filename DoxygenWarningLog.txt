@@ -1,0 +1,4 @@
+error: Tag file `/opt/software/numerics/dealiiDir/doc/doxygen/deal.tag' does not exist or is not a file. Skipping it...
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-doxygen/user_manual/frontpage.md:4: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/README.md:26: warning: explicit link request to 'DE' could not be resolved
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/README.md:26: warning: explicit link request to 'DE' could not be resolved
