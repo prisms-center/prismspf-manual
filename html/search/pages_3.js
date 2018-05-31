@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['running_20a_20prisms_2dpf_20example_20application',['Running a PRISMS-PF Example Application',['../running_apps.html',1,'manual']]]
+  ['prisms_2dpf',['PRISMS-PF',['../index.html',1,'']]],
+  ['prisms_2dpf_20user_20manual',['PRISMS-PF User Manual',['../manual.html',1,'']]]
 ];

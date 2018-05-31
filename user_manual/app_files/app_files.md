@@ -1,1 +1,1 @@
-# The App Files: equations.h, ICs_and_BCs.h, postprocess.h, nucleation.h, customPDE.h, and main.cc {#app_files}
+# Other App Files {#app_files}

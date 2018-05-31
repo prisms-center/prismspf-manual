@@ -5265,7 +5265,7 @@
   </compound>
   <compound kind="page">
     <name>app_files</name>
-    <title>The App Files: equations.h, ICs_and_BCs.h, postprocess.h, nucleation.h, customPDE.h, and main.cc</title>
+    <title>Other App Files</title>
     <filename>app_files</filename>
   </compound>
   <compound kind="page">
