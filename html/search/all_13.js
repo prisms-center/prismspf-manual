@@ -1,7 +1,7 @@
 var searchData=
 [
   ['val',['val',['../class_p_functions_1_1p_function.html#a7c411007aba0cfd2fe2bf6b0258f508e',1,'PFunctions::pFunction']]],
-  ['value',['value',['../classvariable_value_container.html#a6fd686c1e2596ff16365f9098a5ce438',1,'variableValueContainer::value()'],['../class_initial_condition_p_field.html#af07c55aae0a37d719b86b6471bd9422f',1,'InitialConditionPField::value()'],['../class_initial_condition.html#a6a1fceabbc7b046cd7c0934159009195',1,'InitialCondition::value()'],['../class_non_uniform_dirichlet_b_c.html#a6a1fceabbc7b046cd7c0934159009195',1,'NonUniformDirichletBC::value()'],['../class_initial_condition_flood_fill.html#a6a1fceabbc7b046cd7c0934159009195',1,'InitialConditionFloodFill::value()'],['../class_initial_condition_order_parameter_remapper.html#a6a1fceabbc7b046cd7c0934159009195',1,'InitialConditionOrderParameterRemapper::value()']]],
+  ['value',['value',['../classvariable_value_container.html#a6fd686c1e2596ff16365f9098a5ce438',1,'variableValueContainer::value()'],['../class_initial_condition_p_field.html#a369cea7ba74f8cd0a6ca12e0c164ff74',1,'InitialConditionPField::value()'],['../class_initial_condition.html#a42ffc9bc16ba8fb574122a74c67fc061',1,'InitialCondition::value()'],['../class_non_uniform_dirichlet_b_c.html#a42ffc9bc16ba8fb574122a74c67fc061',1,'NonUniformDirichletBC::value()'],['../class_initial_condition_flood_fill.html#a42ffc9bc16ba8fb574122a74c67fc061',1,'InitialConditionFloodFill::value()'],['../class_initial_condition_order_parameter_remapper.html#a42ffc9bc16ba8fb574122a74c67fc061',1,'InitialConditionOrderParameterRemapper::value()']]],
   ['value_5fresidual',['value_residual',['../structvariable__info.html#aadfd9984ded13a72982b365694577069',1,'variable_info']]],
   ['values',['values',['../class_initial_condition_p_field.html#af4f7ff418a27e4086bea198d6d991b0a',1,'InitialConditionPField::values()'],['../class_initial_condition.html#a407a445f9d0e4f15b159fa66058bef9d',1,'InitialCondition::values()']]],
   ['valuesdirichletset',['valuesDirichletSet',['../class_matrix_free_p_d_e.html#ab9ab33bb9925f1062ac082d1b495f2c1',1,'MatrixFreePDE']]],
@@ -55,8 +55,8 @@ var searchData=
   ['vector_5fdofhandler',['vector_dofHandler',['../class_matrix_free_p_d_e.html#a77443cfd920902aa1f1c076d7c6870ad',1,'MatrixFreePDE']]],
   ['vector_5ffe',['vector_fe',['../class_matrix_free_p_d_e.html#af2b18fe93c2284ab7819a79ef0869ab7',1,'MatrixFreePDE']]],
   ['vector_5fmatrixfreeobject',['vector_matrixFreeObject',['../class_matrix_free_p_d_e.html#aaf3b5e41c4d7b8a0c6cb4233b6f635bf',1,'MatrixFreePDE']]],
-  ['vector_5fvalue',['vector_value',['../class_initial_condition_vec.html#aef3a5257533050ac16a01202b5c913c7',1,'InitialConditionVec::vector_value()'],['../class_non_uniform_dirichlet_b_c_vec.html#a848098ab895481f43dba7982883f6e1a',1,'NonUniformDirichletBCVec::vector_value()'],['../classvector_b_c_function.html#a843918812fef1111f6e8337f7de17f4a',1,'vectorBCFunction::vector_value()']]],
-  ['vector_5fvalue_5flist',['vector_value_list',['../classvector_b_c_function.html#a3eeab904ba7be55677e63254007c86f3',1,'vectorBCFunction']]],
+  ['vector_5fvalue',['vector_value',['../class_initial_condition_vec.html#a398bad46eb3e622583d0de9e6834ca18',1,'InitialConditionVec::vector_value()'],['../class_non_uniform_dirichlet_b_c_vec.html#a6b395dc56b44e07541c7e6dfccfc3b1e',1,'NonUniformDirichletBCVec::vector_value()'],['../classvector_b_c_function.html#affa688c4e6a73b105dbe88fe3ecbdd46',1,'vectorBCFunction::vector_value()']]],
+  ['vector_5fvalue_5flist',['vector_value_list',['../classvector_b_c_function.html#a950211ee1861d9d8f28d7171b3682b95',1,'vectorBCFunction']]],
   ['vector_5fvars',['vector_vars',['../classvariable_container.html#a52d8a2732e2b85bdd3a096c0567b499c',1,'variableContainer']]],
   ['vectorbcfunction',['vectorBCFunction',['../classvector_b_c_function.html',1,'vectorBCFunction&lt; dim &gt;'],['../classvector_b_c_function.html#a9444ff93e23811b8f8b013b1d547c220',1,'vectorBCFunction::vectorBCFunction()']]],
   ['vectorbcfunction_2ecc',['vectorBCFunction.cc',['../vector_b_c_function_8cc.html',1,'']]],
@@ -73,5 +73,5 @@ var searchData=
   ['vectorvalueresidual',['vectorValueResidual',['../classmodel_residual.html#afa0d1b980f63e6b85a17e8f2af061bfe',1,'modelResidual']]],
   ['vectorvaluetype',['vectorvalueType',['../classvariable_container.html#a67b2dc8754f16b415d85a07e2b2fe856',1,'variableContainer::vectorvalueType()'],['../type_defs_8h.html#a67b2dc8754f16b415d85a07e2b2fe856',1,'vectorvalueType():&#160;typeDefs.h']]],
   ['verify_5fcheckpoint_5ffile_5fexists',['verify_checkpoint_file_exists',['../class_matrix_free_p_d_e.html#af5917d6cc12c26d2903ba3feb1df2ffd',1,'MatrixFreePDE']]],
-  ['vmult',['vmult',['../class_matrix_free_p_d_e.html#a344f8f169b475748bc249894177d6a2e',1,'MatrixFreePDE']]]
+  ['vmult',['vmult',['../class_matrix_free_p_d_e.html#a808ce06237ea52086b7cf5cf16b2426a',1,'MatrixFreePDE']]]
 ];

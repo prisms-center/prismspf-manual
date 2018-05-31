@@ -1501,15 +1501,15 @@
       <type>void</type>
       <name>createGlobalGrainSetList</name>
       <anchorfile>class_flood_filler.html</anchorfile>
-      <anchor>ab9ea34d03ee7d23cce87cf21d7b38579</anchor>
-      <arglist>(std::vector&lt; GrainSet&lt; dim &gt;&gt; &amp;grain_sets) const </arglist>
+      <anchor>a536f291f96f3f6488d61042b72454d28</anchor>
+      <arglist>(std::vector&lt; GrainSet&lt; dim &gt;&gt; &amp;grain_sets) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>mergeSplitGrains</name>
       <anchorfile>class_flood_filler.html</anchorfile>
-      <anchor>a2cffe7b371b1c7766fc01f5c65b5ab9b</anchor>
-      <arglist>(std::vector&lt; GrainSet&lt; dim &gt;&gt; &amp;grain_sets) const </arglist>
+      <anchor>a3b78c1bf420f1dc733cdb1fb29ccf10b</anchor>
+      <arglist>(std::vector&lt; GrainSet&lt; dim &gt;&gt; &amp;grain_sets) const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>dealii::QGaussLobatto&lt; dim &gt;</type>
@@ -1555,8 +1555,8 @@
       <type>unsigned int</type>
       <name>getGrainIndex</name>
       <anchorfile>class_grain_set.html</anchorfile>
-      <anchor>ab9183795fa2b634b35d57ba45baa9686</anchor>
-      <arglist>() const </arglist>
+      <anchor>ae9b828a0924eedf28ae3218e6e460ce7</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1569,8 +1569,8 @@
       <type>unsigned int</type>
       <name>getOrderParameterIndex</name>
       <anchorfile>class_grain_set.html</anchorfile>
-      <anchor>a2ca1571e7ba78b882f7fd22db7d447bc</anchor>
-      <arglist>() const </arglist>
+      <anchor>a5c1c447ba684d4cc22ecc7738dd0e715</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1583,8 +1583,8 @@
       <type>std::vector&lt; std::vector&lt; dealii::Point&lt; dim &gt; &gt; &gt;</type>
       <name>getVertexList</name>
       <anchorfile>class_grain_set.html</anchorfile>
-      <anchor>abcb62f72943e9e049edd1ebe2237de7d</anchor>
-      <arglist>() const </arglist>
+      <anchor>a615db7de5096e65d03712c43a1c473a9</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>unsigned int</type>
@@ -1623,8 +1623,8 @@
       <type>double</type>
       <name>value</name>
       <anchorfile>class_initial_condition.html</anchorfile>
-      <anchor>a6a1fceabbc7b046cd7c0934159009195</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const </arglist>
+      <anchor>a42ffc9bc16ba8fb574122a74c67fc061</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int</type>
@@ -1663,8 +1663,8 @@
       <type>double</type>
       <name>value</name>
       <anchorfile>class_initial_condition_flood_fill.html</anchorfile>
-      <anchor>a6a1fceabbc7b046cd7c0934159009195</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const </arglist>
+      <anchor>a42ffc9bc16ba8fb574122a74c67fc061</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -1682,8 +1682,8 @@
       <type>double</type>
       <name>value</name>
       <anchorfile>class_initial_condition_order_parameter_remapper.html</anchorfile>
-      <anchor>a6a1fceabbc7b046cd7c0934159009195</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const </arglist>
+      <anchor>a42ffc9bc16ba8fb574122a74c67fc061</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>unsigned int</type>
@@ -1715,8 +1715,8 @@
       <type>double</type>
       <name>value</name>
       <anchorfile>class_initial_condition_p_field.html</anchorfile>
-      <anchor>af07c55aae0a37d719b86b6471bd9422f</anchor>
-      <arglist>(const Point&lt; dim &gt; &amp;p, const unsigned int component=0) const </arglist>
+      <anchor>a369cea7ba74f8cd0a6ca12e0c164ff74</anchor>
+      <arglist>(const Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
@@ -1755,8 +1755,8 @@
       <type>void</type>
       <name>vector_value</name>
       <anchorfile>class_initial_condition_vec.html</anchorfile>
-      <anchor>aef3a5257533050ac16a01202b5c913c7</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_IC) const </arglist>
+      <anchor>a398bad46eb3e622583d0de9e6834ca18</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_IC) const</arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int</type>
@@ -1787,36 +1787,36 @@
       <type>std::vector&lt; std::string &gt;</type>
       <name>get_subsection_entry_list</name>
       <anchorfile>classinput_file_reader.html</anchorfile>
-      <anchor>ab119808af6e6120f79820c81652534d7</anchor>
-      <arglist>(const std::string parameters_file_name, const std::string subsec_name, const std::string entry_name, const std::string default_entry) const </arglist>
+      <anchor>a486b03ca9c463fc1b2367dfd2082fe85</anchor>
+      <arglist>(const std::string parameters_file_name, const std::string subsec_name, const std::string entry_name, const std::string default_entry) const</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
       <name>get_number_of_entries</name>
       <anchorfile>classinput_file_reader.html</anchorfile>
-      <anchor>a25a2d3561e2f0c0b5c5a74df5e4370e7</anchor>
-      <arglist>(const std::string parameters_file_name, const std::string keyword, const std::string entry_name) const </arglist>
+      <anchor>a7863cf373062760b523db8c1e30addce</anchor>
+      <arglist>(const std::string parameters_file_name, const std::string keyword, const std::string entry_name) const</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; std::string &gt;</type>
       <name>get_entry_name_ending_list</name>
       <anchorfile>classinput_file_reader.html</anchorfile>
-      <anchor>a74b75996586c2fa374455ec5775f12d6</anchor>
-      <arglist>(const std::string parameters_file_name, const std::string keyword, const std::string entry_name_begining) const </arglist>
+      <anchor>a4df3e0f75a6ad47e93af3f629006b022</anchor>
+      <arglist>(const std::string parameters_file_name, const std::string keyword, const std::string entry_name_begining) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>declare_parameters</name>
       <anchorfile>classinput_file_reader.html</anchorfile>
-      <anchor>a70afcb4fc4ec111addf19dcbf0edd939</anchor>
-      <arglist>(dealii::ParameterHandler &amp;parameter_handler, const std::vector&lt; fieldType &gt; var_types, const std::vector&lt; PDEType &gt; var_eq_types, const unsigned int num_of_constants, const std::vector&lt; bool &gt;) const </arglist>
+      <anchor>aabeb8db32b5d7d16ec2c0b9d7284514c</anchor>
+      <arglist>(dealii::ParameterHandler &amp;parameter_handler, const std::vector&lt; fieldType &gt; var_types, const std::vector&lt; PDEType &gt; var_eq_types, const unsigned int num_of_constants, const std::vector&lt; bool &gt;) const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>parse_line</name>
       <anchorfile>classinput_file_reader.html</anchorfile>
-      <anchor>a4c03a93f2b56f526824df5a675d9d4db</anchor>
-      <arglist>(std::string line, const std::string keyword, const std::string entry_name, std::string &amp;out_string, bool expect_equals_sign) const </arglist>
+      <anchor>ae7f0067981812fbb4c9ac3323331bf90</anchor>
+      <arglist>(std::string line, const std::string keyword, const std::string entry_name, std::string &amp;out_string, bool expect_equals_sign) const</arglist>
     </member>
     <member kind="variable">
       <type>dealii::ParameterHandler</type>
@@ -1945,8 +1945,8 @@
       <type>virtual void</type>
       <name>makeTriangulation</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>aa0a35420e2bbbc1269a0cd59471ce0bb</anchor>
-      <arglist>(parallel::distributed::Triangulation&lt; dim &gt; &amp;) const </arglist>
+      <anchor>a22e030842c2feaeea8ec0b71aa39d1a7</anchor>
+      <arglist>(parallel::distributed::Triangulation&lt; dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1966,8 +1966,8 @@
       <type>void</type>
       <name>vmult</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a344f8f169b475748bc249894177d6a2e</anchor>
-      <arglist>(vectorType &amp;dst, const vectorType &amp;src) const </arglist>
+      <anchor>a808ce06237ea52086b7cf5cf16b2426a</anchor>
+      <arglist>(vectorType &amp;dst, const vectorType &amp;src) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2064,15 +2064,15 @@
       <type>void</type>
       <name>getLHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>afcc4fe564772a1331ffd7d603e84fc15</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>aefe8e6c625df943cfa499b3590ff1264</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getLaplaceLHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>af6f2176a7f66955cd5020ea17c9339e8</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>aef5e897ed25a8945af81a7f0f87d11fd</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -2092,71 +2092,71 @@
       <type>void</type>
       <name>getLaplaceRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a946b4701f9363ea341b11a55e8adfe2d</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>a4cb1793cdb04f8d4652e51baec9a1841</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, vectorType &amp;dst, const vectorType &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getExplicitRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a6976b28fa181c7503016c84192571ce9</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>a754064f1f503956528e48e2e6badf395</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getNonexplicitRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>abe60b2e416fc29ec98658a23cc216db4</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>aa93fbd3cf0978990973e2b43af10b923</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
       <name>residualExplicitRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a395e1796a24dc0a24be811d49285ebf8</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const  =0</arglist>
+      <anchor>ad9277b675a5c9776f55988b403c4190b</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
       <name>residualNonexplicitRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>ae09f9eaaa58c229fd424da165fb9654c</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const  =0</arglist>
+      <anchor>af94d5d5c0c8e07e44101e1bfdcee0790</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
       <name>residualLHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a73f7a86f71003fe04d55f8b9acd58b5e</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const  =0</arglist>
+      <anchor>a96e137c73375d56af4af0e40a4ec7612</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>postProcessedFields</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>af48d2ca9f6a56369e960c110fa9c99be</anchor>
-      <arglist>(const variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;pp_variable_list, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>acc769a991db11de2904f53e1608c448e</anchor>
+      <arglist>(const variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;pp_variable_list, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>computePostProcessedFields</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>aa87e0aa8f138ccd811e8844a7bf9eea4</anchor>
-      <arglist>(std::vector&lt; vectorType * &gt; &amp;postProcessedSet)</arglist>
+      <anchor>aac0b9f12f254ba7a0eebe86cbc5489cc</anchor>
+      <arglist>(std::vector&lt; vectorType *&gt; &amp;postProcessedSet)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getPostProcessedFields</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>aed13062f158cf04fae4a53b967f073c6</anchor>
-      <arglist>(const dealii::MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range)</arglist>
+      <anchor>ab39958b87a2f7eb72418a133e1797c5b</anchor>
+      <arglist>(const dealii::MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>markBoundaries</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>ac00dbfed1b570cdd2c1f88aa1be13376</anchor>
-      <arglist>(parallel::distributed::Triangulation&lt; dim &gt; &amp;) const </arglist>
+      <anchor>af7d704fe7970d0a596798ca3776b860c</anchor>
+      <arglist>(parallel::distributed::Triangulation&lt; dim &gt; &amp;) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -2183,22 +2183,22 @@
       <type>void</type>
       <name>setPeriodicityConstraints</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a7b3618cecf4fbc94cd1a69aca33c7c49</anchor>
-      <arglist>(ConstraintMatrix *, const DoFHandler&lt; dim &gt; *) const </arglist>
+      <anchor>a135c243553f990db648fba091e38b0a5</anchor>
+      <arglist>(ConstraintMatrix *, const DoFHandler&lt; dim &gt; *) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getComponentsWithRigidBodyModes</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>ac2b182539b16bbc6b617b4af89a90323</anchor>
-      <arglist>(std::vector&lt; int &gt; &amp;) const </arglist>
+      <anchor>addd77ca783d046962ad9ca1873123a5c</anchor>
+      <arglist>(std::vector&lt; int &gt; &amp;) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>setRigidBodyModeConstraints</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a7351c4781287e60646e237594558fb42</anchor>
-      <arglist>(const std::vector&lt; int &gt;, ConstraintMatrix *, const DoFHandler&lt; dim &gt; *) const </arglist>
+      <anchor>a6f788673650d189e079bf0efab6b09d6</anchor>
+      <arglist>(const std::vector&lt; int &gt;, ConstraintMatrix *, const DoFHandler&lt; dim &gt; *) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -2267,8 +2267,8 @@
       <type>void</type>
       <name>getLocalNucleiList</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a149f1ae203f514ea0840861fc163cbd1</anchor>
-      <arglist>(std::vector&lt; nucleus&lt; dim &gt; &gt; &amp;newnuclei) const </arglist>
+      <anchor>ac437198b27f91b42989c65479bb2b6c5</anchor>
+      <arglist>(std::vector&lt; nucleus&lt; dim &gt; &gt; &amp;newnuclei) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -2288,22 +2288,22 @@
       <type>double</type>
       <name>weightedDistanceFromNucleusCenter</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>adb4b61b23ba7496eb3e9d41f247c894b</anchor>
-      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, double &gt; q_point_loc, const unsigned int var_index) const </arglist>
+      <anchor>a085c6d5a2423f0824496c070b897a689</anchor>
+      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, double &gt; q_point_loc, const unsigned int var_index) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>dealii::VectorizedArray&lt; double &gt;</type>
       <name>weightedDistanceFromNucleusCenter</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a63019aa2290fd898557b8db22e96bbfa</anchor>
-      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc, const unsigned int var_index) const </arglist>
+      <anchor>aa4124e202b82f453af69bfc76410dc3f</anchor>
+      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc, const unsigned int var_index) const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual double</type>
       <name>getNucleationProbability</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a596463bba35fe72ea6370acd3e59c58f</anchor>
-      <arglist>(variableValueContainer, double, dealii::Point&lt; dim &gt;, unsigned int variable_index) const </arglist>
+      <anchor>a26ef19db380f66520e7f770d34f927b2</anchor>
+      <arglist>(variableValueContainer, double, dealii::Point&lt; dim &gt;, unsigned int variable_index) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>unsigned int</type>
@@ -2316,29 +2316,29 @@
       <type>void</type>
       <name>outputFreeEnergy</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>abac2cb853f6cd1030278df57182c2000</anchor>
-      <arglist>(const std::vector&lt; double &gt; &amp;freeEnergyValues) const </arglist>
+      <anchor>a984877435c9231c6bd208c908b497028</anchor>
+      <arglist>(const std::vector&lt; double &gt; &amp;freeEnergyValues) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>computeIntegral</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a0557bad11a8218237259d833346d1b04</anchor>
-      <arglist>(double &amp;integratedField, int index, std::vector&lt; vectorType * &gt; postProcessedSet)</arglist>
+      <anchor>a356e9d5fc8a07c8c40257c52289d3bb8</anchor>
+      <arglist>(double &amp;integratedField, int index, std::vector&lt; vectorType *&gt; postProcessedSet)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>computeIntegralMF</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a3592797668adec1f9d2cd862c2794973</anchor>
-      <arglist>(double &amp;integratedField, int index, const std::vector&lt; vectorType * &gt; postProcessedSet)</arglist>
+      <anchor>ac78cee232379f64566d76e5aa94d1c05</anchor>
+      <arglist>(double &amp;integratedField, int index, const std::vector&lt; vectorType *&gt; postProcessedSet)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>getIntegralMF</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a536acc7c429acbac1718006fac781037</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range)</arglist>
+      <anchor>aad23fc921ba0d7ade27ebd12e38fe39f</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>userInputParameters&lt; dim &gt;</type>
@@ -2854,8 +2854,8 @@
       <type>double</type>
       <name>value</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
-      <anchor>a6a1fceabbc7b046cd7c0934159009195</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const </arglist>
+      <anchor>a42ffc9bc16ba8fb574122a74c67fc061</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int</type>
@@ -2901,8 +2901,8 @@
       <type>void</type>
       <name>vector_value</name>
       <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
-      <anchor>a848098ab895481f43dba7982883f6e1a</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_BC) const </arglist>
+      <anchor>a6b395dc56b44e07541c7e6dfccfc3b1e</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_BC) const</arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int</type>
@@ -3070,15 +3070,15 @@
       <type>void</type>
       <name>remap</name>
       <anchorfile>class_order_parameter_remapper.html</anchorfile>
-      <anchor>a2b0a77f197d3207e0b89312047d6c8b4</anchor>
-      <arglist>(std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;grain_representations, std::vector&lt; vectorType * &gt; &amp;solution_fields, dealii::DoFHandler&lt; dim &gt; &amp;dof_handler, unsigned int dofs_per_cell, double buffer)</arglist>
+      <anchor>acfccf1829f4a2a861e47adfba4c4ceef</anchor>
+      <arglist>(std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;grain_representations, std::vector&lt; vectorType *&gt; &amp;solution_fields, dealii::DoFHandler&lt; dim &gt; &amp;dof_handler, unsigned int dofs_per_cell, double buffer)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>remap_from_index_field</name>
       <anchorfile>class_order_parameter_remapper.html</anchorfile>
-      <anchor>a9d576ddab07e31881ed3b61c947188d8</anchor>
-      <arglist>(std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;grain_representations, const vectorType *grain_index_field, std::vector&lt; vectorType * &gt; &amp;solution_fields, dealii::DoFHandler&lt; dim &gt; &amp;dof_handler, unsigned int dofs_per_cell, double buffer)</arglist>
+      <anchor>ac3275d20ea31003e3eb8090b77971293</anchor>
+      <arglist>(std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;grain_representations, const vectorType *grain_index_field, std::vector&lt; vectorType *&gt; &amp;solution_fields, dealii::DoFHandler&lt; dim &gt; &amp;dof_handler, unsigned int dofs_per_cell, double buffer)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -3110,8 +3110,8 @@
       <type>void</type>
       <name>sendUpdate</name>
       <anchorfile>classparallel_nucleation_list.html</anchorfile>
-      <anchor>a6b7a91761834754f88a6b472b38584e0</anchor>
-      <arglist>(int procno) const </arglist>
+      <anchor>afb42182afb3aed36435a9b3e308fae2d</anchor>
+      <arglist>(int procno) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -3219,29 +3219,29 @@
       <type>void</type>
       <name>getRHS</name>
       <anchorfile>classset_rigid_body_mode_constraints_test.html</anchorfile>
-      <anchor>a54b3ce066d6b3fa7a6d46c0badbe978b</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>a66cebc08516b1ff3f58773650e25acee</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualExplicitRHS</name>
       <anchorfile>classset_rigid_body_mode_constraints_test.html</anchorfile>
-      <anchor>aa935388e178529a537045320dfbbfd8f</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ab12aec8939565e6332541a0a36db6dea</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualNonexplicitRHS</name>
       <anchorfile>classset_rigid_body_mode_constraints_test.html</anchorfile>
-      <anchor>a3b563aecec910b01e2ae08505b197d02</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ad6cbfa8f6560c4fed978b6ffe1d40183</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualLHS</name>
       <anchorfile>classset_rigid_body_mode_constraints_test.html</anchorfile>
-      <anchor>a4c5cecf654f57452af3951822493532b</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ad16d35963db0b282be83eaa2749d921e</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
@@ -3266,8 +3266,8 @@
       <type>void</type>
       <name>transferGrainIds</name>
       <anchorfile>class_simplified_grain_manipulator.html</anchorfile>
-      <anchor>ad9ec31fa119c4b132590c027e173261d</anchor>
-      <arglist>(const std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;old_grain_representations, std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;new_grain_representations) const </arglist>
+      <anchor>a38980c90bde2654e53402ba7a0f3acb4</anchor>
+      <arglist>(const std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;old_grain_representations, std::vector&lt; SimplifiedGrainRepresentation&lt; dim &gt;&gt; &amp;new_grain_representations) const</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -3285,22 +3285,22 @@
       <type>dealii::Point&lt; dim &gt;</type>
       <name>getCenter</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>a960112c649d9c09bb73ee7284b693fea</anchor>
-      <arglist>() const </arglist>
+      <anchor>a50c66182720fc1829bce934d7d0b74e9</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>getRadius</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>a04505a6cdb23e1e001a58fc7f714ca1c</anchor>
-      <arglist>() const </arglist>
+      <anchor>abc729e1a97120366bac360a970939a01</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
       <name>getGrainId</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>ab7f93e3c6709c0de149def2fd47e37fe</anchor>
-      <arglist>() const </arglist>
+      <anchor>a3e4afbe07be4e53c23a0f9e47d80c0ec</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3313,8 +3313,8 @@
       <type>unsigned int</type>
       <name>getOrderParameterId</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>a4c51d1c625dcc7c2ba45633f19ea2cf3</anchor>
-      <arglist>() const </arglist>
+      <anchor>afb01632f445be23ec773c17104b5b169</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3327,8 +3327,8 @@
       <type>unsigned int</type>
       <name>getOldOrderParameterId</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>a0a1f36488ec7bb962f090f8799187c0b</anchor>
-      <arglist>() const </arglist>
+      <anchor>a6b69cd30825663c70c26eb7763a07ba3</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3341,8 +3341,8 @@
       <type>double</type>
       <name>getDistanceToNeighbor</name>
       <anchorfile>class_simplified_grain_representation.html</anchorfile>
-      <anchor>aca6bb20f3225ab64873be9e115e89f22</anchor>
-      <arglist>() const </arglist>
+      <anchor>a38ced8dbee4af316c9f858f814cb87b7</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>dealii::Point&lt; dim &gt;</type>
@@ -3471,29 +3471,29 @@
       <type>void</type>
       <name>getRHS</name>
       <anchorfile>classtest_inv_m.html</anchorfile>
-      <anchor>a54b3ce066d6b3fa7a6d46c0badbe978b</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>a66cebc08516b1ff3f58773650e25acee</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualExplicitRHS</name>
       <anchorfile>classtest_inv_m.html</anchorfile>
-      <anchor>aa935388e178529a537045320dfbbfd8f</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ab12aec8939565e6332541a0a36db6dea</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualNonexplicitRHS</name>
       <anchorfile>classtest_inv_m.html</anchorfile>
-      <anchor>a3b563aecec910b01e2ae08505b197d02</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ad6cbfa8f6560c4fed978b6ffe1d40183</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualLHS</name>
       <anchorfile>classtest_inv_m.html</anchorfile>
-      <anchor>a4c5cecf654f57452af3951822493532b</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ad16d35963db0b282be83eaa2749d921e</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
@@ -3527,22 +3527,22 @@
       <type>void</type>
       <name>getRHS</name>
       <anchorfile>classtest_output_results.html</anchorfile>
-      <anchor>a54b3ce066d6b3fa7a6d46c0badbe978b</anchor>
-      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType * &gt; &amp;dst, const std::vector&lt; vectorType * &gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const </arglist>
+      <anchor>a66cebc08516b1ff3f58773650e25acee</anchor>
+      <arglist>(const MatrixFree&lt; dim, double &gt; &amp;data, std::vector&lt; vectorType *&gt; &amp;dst, const std::vector&lt; vectorType *&gt; &amp;src, const std::pair&lt; unsigned int, unsigned int &gt; &amp;cell_range) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualRHS</name>
       <anchorfile>classtest_output_results.html</anchorfile>
-      <anchor>a12929114dcb8406ca369f40a6b921127</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>a85cc4ed99c3a130df6cc37d7863b1610</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
       <name>residualLHS</name>
       <anchorfile>classtest_output_results.html</anchorfile>
-      <anchor>a4c5cecf654f57452af3951822493532b</anchor>
-      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const </arglist>
+      <anchor>ad16d35963db0b282be83eaa2749d921e</anchor>
+      <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>void</type>
@@ -3727,43 +3727,43 @@
       <type>double</type>
       <name>get_model_constant_double</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a97ef3fe9a9708a7665f9d1b97e4a04ea</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>a47a240f8c44bdfb6ddea1cd25e2f5c92</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>get_model_constant_int</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a932b792beb1f1d7e053fd432a9ddbcea</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>a90c1b215d773b9c99595bd7e7e4cdbc0</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>get_model_constant_bool</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a84ae8b445f881440cc49f747524f28b5</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>aa0c7adf26d47b880e7152825fd3579aa</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 1, dim &gt;</type>
       <name>get_model_constant_rank_1_tensor</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>ab72105ec0a54e50940449ee064d1bfb5</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>a7486a4d8baafd79b7cc2160936316bf7</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim &gt;</type>
       <name>get_model_constant_rank_2_tensor</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a77585f23a31f641282eea0e1f85db907</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>a8033c824eef9d1cae8712f1aff6e0738</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, 2 *dim-1+dim/3 &gt;</type>
       <name>get_model_constant_elasticity_tensor</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>ab3b715fcffbad36c7c82f97024f071f2</anchor>
-      <arglist>(const std::string constant_name) const </arglist>
+      <anchor>a2174bb182a9a6a57228f90e084316994</anchor>
+      <arglist>(const std::string constant_name) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3776,43 +3776,43 @@
       <type>std::vector&lt; double &gt;</type>
       <name>get_nucleus_semiaxes</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a25f1b30ac5d82af45caaaddfd1beee9a</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>a6863bf5401b5c4e294ab323e6945c745</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; double &gt;</type>
       <name>get_nucleus_freeze_semiaxes</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>ac40f9f639348277b928dcac4d671caa6</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>ae01597b7c9dbf1facd8e4edb0edabfdc</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; double &gt;</type>
       <name>get_nucleus_rotation</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a8f942efdd9556014bfa0bd751d588161</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>a12a25d5cf04a84004d1ba90a0dde563e</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_no_nucleation_border_thickness</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>abbce990272803b4516a245046ef1b313</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>a098c87366e36f6663d1c17f500324934</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_nucleus_hold_time</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a0dc11b1edb393ddd962466dfd755329f</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>a7ff43c845d3c0b6ef598d57d60399f27</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim, double &gt;</type>
       <name>get_nucleus_rotation_matrix</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a676216f6b4aaf4eb9073e0e3349b49cb</anchor>
-      <arglist>(unsigned int var_index) const </arglist>
+      <anchor>a33defe0543ea762508a3b59659014998</anchor>
+      <arglist>(unsigned int var_index) const</arglist>
     </member>
     <member kind="variable">
       <type>std::unordered_map&lt; std::string, unsigned int &gt;</type>
@@ -4301,15 +4301,15 @@
       <type>dealii::Tensor&lt; 2, 2 *dim-1+dim/3 &gt;</type>
       <name>get_Cij_tensor</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a334d74867bf4b18cc0128851146c903a</anchor>
-      <arglist>(std::vector&lt; double &gt; elastic_constants, const std::string elastic_const_symmetry) const </arglist>
+      <anchor>aad5926c804700b37bcf51a38899edf0b</anchor>
+      <arglist>(std::vector&lt; double &gt; elastic_constants, const std::string elastic_const_symmetry) const</arglist>
     </member>
     <member kind="function" protection="private">
       <type>dealii::Tensor&lt; 2, 2 *dim-1+dim/3 &gt;</type>
       <name>getCIJMatrix</name>
       <anchorfile>classuser_input_parameters.html</anchorfile>
-      <anchor>a34ed5be92388fa997d2206a17690d6a6</anchor>
-      <arglist>(const elasticityModel model, const std::vector&lt; double &gt; constants, dealii::ConditionalOStream &amp;pcout) const </arglist>
+      <anchor>a41d83680f6e5f0b101889c7b8a7d1d7c</anchor>
+      <arglist>(const elasticityModel model, const std::vector&lt; double &gt; constants, dealii::ConditionalOStream &amp;pcout) const</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>std::vector&lt; nucleationParameters&lt; dim &gt; &gt;</type>
@@ -4923,85 +4923,85 @@
       <type>T</type>
       <name>get_scalar_value</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a584798e95700a759ddd08268c3995a43</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a23ba7476f96e481b2c3adf1cb5489e95</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 1, dim, T &gt;</type>
       <name>get_scalar_gradient</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>ad623c486c6147a9a8a62203529cdacf9</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a25d3b40349b111e07030244305b2e34d</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim, T &gt;</type>
       <name>get_scalar_hessian</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>abda3ff533aa78a7196ec0b6a4553bdea</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>ac5d04b68be5d22fb9a251b7a6c1a5732</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 1, dim, T &gt;</type>
       <name>get_vector_value</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>aae5d5664282d1192dc5f5bd62074f83f</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>afe726a802cb7e3f0666402ff17493604</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim, T &gt;</type>
       <name>get_vector_gradient</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>aa0d9fafbd3a675891c12add704e6780d</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a758e4ed9a11d20fa109769ff44311b63</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 3, dim, T &gt;</type>
       <name>get_vector_hessian</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a7b157055aabdf531aa70e279712c53e4</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a746e1dc2e51ca80b3dd4e5503df4e0e3</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>T</type>
       <name>get_change_in_scalar_value</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>ae891ca3b3dacd905fbff25478dab600e</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a00cd9c42d1b0404c2e470d6889c90a4a</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 1, dim, T &gt;</type>
       <name>get_change_in_scalar_gradient</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a2334c6644986854cf64082e055d463b1</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a79e19edbbee30056f48f6b8511558fba</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim, T &gt;</type>
       <name>get_change_in_scalar_hessian</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a558ff58e2fcff8f1b6a70422d612490f</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a4c09099208e10592ed3c6c0b8ab3790f</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 1, dim, T &gt;</type>
       <name>get_change_in_vector_value</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>ab2e425717a38bf02497af5868d54eccd</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a40720a7697cfc39ad2048acccfb0a7b5</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 2, dim, T &gt;</type>
       <name>get_change_in_vector_gradient</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a740b44ebe3c44d59b56d2ca26ad3ac31</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a9487e57dd30bfbb7d720b51835061c6a</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>dealii::Tensor&lt; 3, dim, T &gt;</type>
       <name>get_change_in_vector_hessian</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a706d828db19a8011727f6305dfdffd5a</anchor>
-      <arglist>(unsigned int global_variable_index) const </arglist>
+      <anchor>a3dbdb7b4f132689f202226dd514aa1a1</anchor>
+      <arglist>(unsigned int global_variable_index) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -5063,8 +5063,8 @@
       <type>void</type>
       <name>reinit_and_eval</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a887142b7bc913325076937811e586dc6</anchor>
-      <arglist>(const std::vector&lt; vectorType * &gt; &amp;src, unsigned int cell)</arglist>
+      <anchor>ae20f2bfeccb3c2251bfa72119abfdc59</anchor>
+      <arglist>(const std::vector&lt; vectorType *&gt; &amp;src, unsigned int cell)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -5077,8 +5077,8 @@
       <type>void</type>
       <name>reinit_and_eval_LHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a458d69462c54bde12d6bfc6c8a2dcb1b</anchor>
-      <arglist>(const vectorType &amp;src, const std::vector&lt; vectorType * &gt; solutionSet, unsigned int cell, unsigned int var_being_solved)</arglist>
+      <anchor>ab0e4702466ab65f8202173ba3a02456c</anchor>
+      <arglist>(const vectorType &amp;src, const std::vector&lt; vectorType *&gt; solutionSet, unsigned int cell, unsigned int var_being_solved)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -5091,8 +5091,8 @@
       <type>void</type>
       <name>integrate_and_distribute</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>aa9d853031ce148f125c962571bb18cc3</anchor>
-      <arglist>(std::vector&lt; vectorType * &gt; &amp;dst)</arglist>
+      <anchor>a2db675a9ca3048e404b8fb034369cd09</anchor>
+      <arglist>(std::vector&lt; vectorType *&gt; &amp;dst)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -5240,15 +5240,15 @@
       <type>virtual void</type>
       <name>vector_value</name>
       <anchorfile>classvector_b_c_function.html</anchorfile>
-      <anchor>a843918812fef1111f6e8337f7de17f4a</anchor>
-      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;values) const </arglist>
+      <anchor>affa688c4e6a73b105dbe88fe3ecbdd46</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;values) const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>vector_value_list</name>
       <anchorfile>classvector_b_c_function.html</anchorfile>
-      <anchor>a3eeab904ba7be55677e63254007c86f3</anchor>
-      <arglist>(const std::vector&lt; dealii::Point&lt; dim &gt; &gt; &amp;points, std::vector&lt; dealii::Vector&lt; double &gt; &gt; &amp;value_list) const </arglist>
+      <anchor>a950211ee1861d9d8f28d7171b3682b95</anchor>
+      <arglist>(const std::vector&lt; dealii::Point&lt; dim &gt; &gt; &amp;points, std::vector&lt; dealii::Vector&lt; double &gt; &gt; &amp;value_list) const</arglist>
     </member>
     <member kind="variable" protection="private">
       <type>const std::vector&lt; double &gt;</type>
@@ -5320,7 +5320,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title></title>
+    <title>PRISMS-PF</title>
     <filename>index</filename>
   </compound>
 </tagfile>

@@ -14,7 +14,7 @@ var searchData=
   ['output_5ffile_5ftype',['output_file_type',['../classuser_input_parameters.html#a29eacc954875c85c1db299bfb6ec7d5c',1,'userInputParameters']]],
   ['output_5fintegral_5flist',['output_integral_list',['../classvariable_attribute_loader.html#a54ca351457994f16ce5e3ce4278826ee',1,'variableAttributeLoader']]],
   ['output_5fvtu_5fper_5fprocess',['output_vtu_per_process',['../classuser_input_parameters.html#ab9f8888105ebc126becec803ec03ecfb',1,'userInputParameters']]],
-  ['outputfreeenergy',['outputFreeEnergy',['../class_matrix_free_p_d_e.html#abac2cb853f6cd1030278df57182c2000',1,'MatrixFreePDE']]],
+  ['outputfreeenergy',['outputFreeEnergy',['../class_matrix_free_p_d_e.html#a984877435c9231c6bd208c908b497028',1,'MatrixFreePDE']]],
   ['outputresults',['outputResults',['../class_matrix_free_p_d_e.html#ada15bd2ddcdcee02193cafbc4e2111d2',1,'MatrixFreePDE']]],
   ['outputresults_2ecc',['outputResults.cc',['../output_results_8cc.html',1,'']]],
   ['outputtimesteplist',['outputTimeStepList',['../classuser_input_parameters.html#a3b5e9a02e069647ed3319524403b6b96',1,'userInputParameters']]]

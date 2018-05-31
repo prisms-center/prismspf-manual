@@ -6,6 +6,6 @@ var classparallel_nucleation_list =
     [ "receiveUpdate", "classparallel_nucleation_list.html#ad538f2c3b2a68f5cef215801a687a7ff", null ],
     [ "removeSubsetOfNuclei", "classparallel_nucleation_list.html#abbd2e2215b5bf8859484cc2dc6112dc7", null ],
     [ "resolveNucleationConflicts", "classparallel_nucleation_list.html#a2bade43ad9197049f681735d35fbe343", null ],
-    [ "sendUpdate", "classparallel_nucleation_list.html#a6b7a91761834754f88a6b472b38584e0", null ],
+    [ "sendUpdate", "classparallel_nucleation_list.html#afb42182afb3aed36435a9b3e308fae2d", null ],
     [ "newnuclei", "classparallel_nucleation_list.html#ad343e89b3a978489e45399845838776e", null ]
 ];

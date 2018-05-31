@@ -1,12 +1,12 @@
 var class_simplified_grain_representation =
 [
     [ "SimplifiedGrainRepresentation", "class_simplified_grain_representation.html#a2147fb199736c3bcb62e3f2dc1b59d8c", null ],
-    [ "getCenter", "class_simplified_grain_representation.html#a960112c649d9c09bb73ee7284b693fea", null ],
-    [ "getDistanceToNeighbor", "class_simplified_grain_representation.html#aca6bb20f3225ab64873be9e115e89f22", null ],
-    [ "getGrainId", "class_simplified_grain_representation.html#ab7f93e3c6709c0de149def2fd47e37fe", null ],
-    [ "getOldOrderParameterId", "class_simplified_grain_representation.html#a0a1f36488ec7bb962f090f8799187c0b", null ],
-    [ "getOrderParameterId", "class_simplified_grain_representation.html#a4c51d1c625dcc7c2ba45633f19ea2cf3", null ],
-    [ "getRadius", "class_simplified_grain_representation.html#a04505a6cdb23e1e001a58fc7f714ca1c", null ],
+    [ "getCenter", "class_simplified_grain_representation.html#a50c66182720fc1829bce934d7d0b74e9", null ],
+    [ "getDistanceToNeighbor", "class_simplified_grain_representation.html#a38ced8dbee4af316c9f858f814cb87b7", null ],
+    [ "getGrainId", "class_simplified_grain_representation.html#a3e4afbe07be4e53c23a0f9e47d80c0ec", null ],
+    [ "getOldOrderParameterId", "class_simplified_grain_representation.html#a6b69cd30825663c70c26eb7763a07ba3", null ],
+    [ "getOrderParameterId", "class_simplified_grain_representation.html#afb01632f445be23ec773c17104b5b169", null ],
+    [ "getRadius", "class_simplified_grain_representation.html#abc729e1a97120366bac360a970939a01", null ],
     [ "setDistanceToNeighbor", "class_simplified_grain_representation.html#aadf6799dfac37f8bcff23be45968fae0", null ],
     [ "setGrainId", "class_simplified_grain_representation.html#a62af32b5873c5243de0f7fd7a2973c66", null ],
     [ "setOrderParameterId", "class_simplified_grain_representation.html#a140446c8915c68d6af02d6801c0e6bb7", null ],
