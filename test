@@ -1,15 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <tagfile>
   <compound kind="file">
-    <name>dealIIheaders.h</name>
-    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
-    <filename>deal_i_iheaders_8h</filename>
-  </compound>
-  <compound kind="file">
     <name>EquationDependencyParser.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>_equation_dependency_parser_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="var_type_enums_8h" name="varTypeEnums.h" local="yes" imported="no">varTypeEnums.h</includes>
     <class kind="class">EquationDependencyParser</class>
   </compound>
@@ -24,7 +18,6 @@
     <name>FloodFiller.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>_flood_filler_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <class kind="class">GrainSet</class>
     <class kind="class">FloodFiller</class>
     <member kind="typedef">
@@ -36,23 +29,18 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>initialCondition_template_instantiations.h</name>
-    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
-    <filename>initial_condition__template__instantiations_8h</filename>
-  </compound>
-  <compound kind="file">
     <name>initialConditions.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>initial_conditions_8h</filename>
     <includes id="user_input_parameters_8h" name="userInputParameters.h" local="yes" imported="no">userInputParameters.h</includes>
+    <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">matrixFreePDE.h</includes>
     <class kind="class">InitialCondition</class>
-    <class kind="class">InitialConditionVec</class>
+    <class kind="class">InitialConditionVector</class>
   </compound>
   <compound kind="file">
     <name>inputFileReader.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>input_file_reader_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="variable_attribute_loader_8h" name="variableAttributeLoader.h" local="yes" imported="no">variableAttributeLoader.h</includes>
     <class kind="class">inputFileReader</class>
   </compound>
@@ -60,14 +48,11 @@
     <name>matrixFreePDE.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>matrix_free_p_d_e_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
-    <includes id="var_b_cs_8h" name="varBCs.h" local="yes" imported="no">varBCs.h</includes>
     <includes id="fields_8h" name="fields.h" local="yes" imported="no">fields.h</includes>
     <includes id="user_input_parameters_8h" name="userInputParameters.h" local="yes" imported="no">userInputParameters.h</includes>
     <includes id="nucleus_8h" name="nucleus.h" local="yes" imported="no">nucleus.h</includes>
     <includes id="variable_value_container_8h" name="variableValueContainer.h" local="yes" imported="no">variableValueContainer.h</includes>
     <includes id="variable_container_8h" name="variableContainer.h" local="yes" imported="no">variableContainer.h</includes>
-    <includes id="_equation_dependency_parser_8h" name="EquationDependencyParser.h" local="yes" imported="no">EquationDependencyParser.h</includes>
     <includes id="_simplified_grain_representation_8h" name="SimplifiedGrainRepresentation.h" local="yes" imported="no">SimplifiedGrainRepresentation.h</includes>
     <class kind="class">MatrixFreePDE</class>
     <member kind="define">
@@ -117,13 +102,9 @@
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>non_uniform_dirichlet_b_c_8h</filename>
     <includes id="user_input_parameters_8h" name="userInputParameters.h" local="yes" imported="no">userInputParameters.h</includes>
+    <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">matrixFreePDE.h</includes>
     <class kind="class">NonUniformDirichletBC</class>
-    <class kind="class">NonUniformDirichletBCVec</class>
-  </compound>
-  <compound kind="file">
-    <name>nonUniformDirichletBC_template_instantiations.h</name>
-    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
-    <filename>non_uniform_dirichlet_b_c__template__instantiations_8h</filename>
+    <class kind="class">NonUniformDirichletBCVector</class>
   </compound>
   <compound kind="file">
     <name>nucleationParameters.h</name>
@@ -135,14 +116,12 @@
     <name>nucleus.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>nucleus_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <class kind="struct">nucleus</class>
   </compound>
   <compound kind="file">
     <name>OrderParameterRemapper.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>_order_parameter_remapper_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="_simplified_grain_representation_8h" name="SimplifiedGrainRepresentation.h" local="yes" imported="no">SimplifiedGrainRepresentation.h</includes>
     <class kind="class">OrderParameterRemapper</class>
   </compound>
@@ -152,6 +131,12 @@
     <filename>parallel_nucleation_list_8h</filename>
     <includes id="nucleus_8h" name="nucleus.h" local="yes" imported="no">nucleus.h</includes>
     <class kind="class">parallelNucleationList</class>
+  </compound>
+  <compound kind="file">
+    <name>ParseCommandLineOpts.h</name>
+    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
+    <filename>_parse_command_line_opts_8h</filename>
+    <class kind="class">ParseCommandLineOpts</class>
   </compound>
   <compound kind="file">
     <name>postProcessedFields.h</name>
@@ -177,7 +162,6 @@
     <name>SolverParameters.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>_solver_parameters_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <class kind="class">SolverParametersBase</class>
     <class kind="class">LinearSolverParameters</class>
     <class kind="class">NonlinearSolverParameters</class>
@@ -211,7 +195,6 @@
     <name>sortIndexEntryPairList.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>sort_index_entry_pair_list_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="var_type_enums_8h" name="varTypeEnums.h" local="yes" imported="no">varTypeEnums.h</includes>
     <member kind="function">
       <type>std::vector&lt; bool &gt;</type>
@@ -321,7 +304,6 @@
     <name>userInputParameters.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>user_input_parameters_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="model__variables_8h" name="model_variables.h" local="yes" imported="no">model_variables.h</includes>
     <includes id="var_b_cs_8h" name="varBCs.h" local="yes" imported="no">varBCs.h</includes>
     <includes id="input_file_reader_8h" name="inputFileReader.h" local="yes" imported="no">inputFileReader.h</includes>
@@ -420,7 +402,6 @@
     <name>variableAttributeLoader.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/include/</path>
     <filename>variable_attribute_loader_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">dealIIheaders.h</includes>
     <includes id="model__variables_8h" name="model_variables.h" local="yes" imported="no">model_variables.h</includes>
     <includes id="var_type_enums_8h" name="varTypeEnums.h" local="yes" imported="no">varTypeEnums.h</includes>
     <includes id="_equation_dependency_parser_8h" name="EquationDependencyParser.h" local="yes" imported="no">EquationDependencyParser.h</includes>
@@ -572,6 +553,7 @@
     <filename>src_2matrixfree_2boundary_conditions_8cc</filename>
     <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">../../include/matrixFreePDE.h</includes>
     <includes id="vector_b_c_function_8h" name="vectorBCFunction.h" local="yes" imported="no">../../include/vectorBCFunction.h</includes>
+    <includes id="var_b_cs_8h" name="varBCs.h" local="yes" imported="no">../../include/varBCs.h</includes>
     <includes id="non_uniform_dirichlet_b_c_8h" name="nonUniformDirichletBC.h" local="yes" imported="no">../../include/nonUniformDirichletBC.h</includes>
     <includes id="matrix_free_p_d_e__template__instantiations_8h" name="matrixFreePDE_template_instantiations.h" local="yes" imported="no">../../include/matrixFreePDE_template_instantiations.h</includes>
   </compound>
@@ -621,6 +603,7 @@
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/src/matrixfree/</path>
     <filename>init_8cc</filename>
     <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">../../include/matrixFreePDE.h</includes>
+    <includes id="var_b_cs_8h" name="varBCs.h" local="yes" imported="no">../../include/varBCs.h</includes>
     <includes id="matrix_free_p_d_e__template__instantiations_8h" name="matrixFreePDE_template_instantiations.h" local="yes" imported="no">../../include/matrixFreePDE_template_instantiations.h</includes>
   </compound>
   <compound kind="file">
@@ -673,6 +656,7 @@
     <filename>nucleation_8cc</filename>
     <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">../../include/matrixFreePDE.h</includes>
     <includes id="parallel_nucleation_list_8h" name="parallelNucleationList.h" local="yes" imported="no">../../include/parallelNucleationList.h</includes>
+    <includes id="var_b_cs_8h" name="varBCs.h" local="yes" imported="no">../../include/varBCs.h</includes>
     <includes id="matrix_free_p_d_e__template__instantiations_8h" name="matrixFreePDE_template_instantiations.h" local="yes" imported="no">../../include/matrixFreePDE_template_instantiations.h</includes>
   </compound>
   <compound kind="file">
@@ -745,6 +729,7 @@
     <name>computeStress.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/src/models/mechanics/</path>
     <filename>compute_stress_8h</filename>
+    <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">../../../include/matrixFreePDE.h</includes>
     <member kind="function">
       <type>void</type>
       <name>computeStress</name>
@@ -887,14 +872,12 @@
     <name>vectorBCFunction.cc</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/src/utilities/</path>
     <filename>vector_b_c_function_8cc</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">../../include/dealIIheaders.h</includes>
     <includes id="vector_b_c_function_8h" name="vectorBCFunction.h" local="yes" imported="no">../../include/vectorBCFunction.h</includes>
   </compound>
   <compound kind="file">
     <name>variableAttributeLoader.cc</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/src/variableAttributeLoader/</path>
     <filename>variable_attribute_loader_8cc</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">../../include/dealIIheaders.h</includes>
     <includes id="variable_attribute_loader_8h" name="variableAttributeLoader.h" local="yes" imported="no">../../include/variableAttributeLoader.h</includes>
     <includes id="sort_index_entry_pair_list_8h" name="sortIndexEntryPairList.h" local="yes" imported="no">../../include/sortIndexEntryPairList.h</includes>
   </compound>
@@ -1078,7 +1061,6 @@
     <name>unitTest.h</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/tests/unit_tests/</path>
     <filename>unit_test_8h</filename>
-    <includes id="deal_i_iheaders_8h" name="dealIIheaders.h" local="yes" imported="no">../../include/dealIIheaders.h</includes>
     <includes id="matrix_free_p_d_e_8h" name="matrixFreePDE.h" local="yes" imported="no">../../include/matrixFreePDE.h</includes>
     <includes id="parallel_nucleation_list_8h" name="parallelNucleationList.h" local="yes" imported="no">../../include/parallelNucleationList.h</includes>
     <includes id="matrix_free_p_d_e_8cc" name="matrixFreePDE.cc" local="yes" imported="no">../../src/matrixfree/matrixFreePDE.cc</includes>
@@ -1612,12 +1594,13 @@
     <name>InitialCondition</name>
     <filename>class_initial_condition.html</filename>
     <templarg>dim</templarg>
+    <templarg>degree</templarg>
     <member kind="function">
       <type></type>
       <name>InitialCondition</name>
       <anchorfile>class_initial_condition.html</anchorfile>
-      <anchor>aaa40354b8b52e76d04daa0a9bc930d63</anchor>
-      <arglist>(const unsigned int _index, const userInputParameters&lt; dim &gt; _userInputs)</arglist>
+      <anchor>a99213ba53b2edd2b6f6b64038d1ff93a</anchor>
+      <arglist>(const unsigned int _index, const userInputParameters&lt; dim &gt; _userInputs, MatrixFreePDE&lt; dim, degree &gt; *_matrix_free_pde)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -1645,6 +1628,13 @@
       <name>values</name>
       <anchorfile>class_initial_condition.html</anchorfile>
       <anchor>a407a445f9d0e4f15b159fa66058bef9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>MatrixFreePDE&lt; dim, degree &gt; *</type>
+      <name>matrix_free_pde</name>
+      <anchorfile>class_initial_condition.html</anchorfile>
+      <anchor>a4b0c3c4ae46e4354f9a61876c0223e82</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1741,35 +1731,50 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>InitialConditionVec</name>
-    <filename>class_initial_condition_vec.html</filename>
+    <name>InitialConditionVector</name>
+    <filename>class_initial_condition_vector.html</filename>
     <templarg>dim</templarg>
+    <templarg>degree</templarg>
     <member kind="function">
       <type></type>
-      <name>InitialConditionVec</name>
-      <anchorfile>class_initial_condition_vec.html</anchorfile>
-      <anchor>a78ec66a3d4cb62bfccf19144f79fba04</anchor>
-      <arglist>(const unsigned int _index, const userInputParameters&lt; dim &gt; _userInputs)</arglist>
+      <name>InitialConditionVector</name>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
+      <anchor>a954c17eac2c8bca96ea70291e9471937</anchor>
+      <arglist>(const unsigned int _index, const userInputParameters&lt; dim &gt; _userInputs, MatrixFreePDE&lt; dim, degree &gt; *_matrix_free_pde)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>vector_value</name>
-      <anchorfile>class_initial_condition_vec.html</anchorfile>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
       <anchor>a398bad46eb3e622583d0de9e6834ca18</anchor>
       <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_IC) const</arglist>
     </member>
     <member kind="variable">
       <type>const unsigned int</type>
       <name>index</name>
-      <anchorfile>class_initial_condition_vec.html</anchorfile>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
       <anchor>ad50032c86051707cc49a8ded34ea39cc</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const userInputParameters&lt; dim &gt;</type>
       <name>userInputs</name>
-      <anchorfile>class_initial_condition_vec.html</anchorfile>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
       <anchor>a679378dc93ff06d974a1ead4213456cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>dealii::Vector&lt; double &gt;</type>
+      <name>values</name>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
+      <anchor>a407a445f9d0e4f15b159fa66058bef9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>MatrixFreePDE&lt; dim, degree &gt; *</type>
+      <name>matrix_free_pde</name>
+      <anchorfile>class_initial_condition_vector.html</anchorfile>
+      <anchor>a4b0c3c4ae46e4354f9a61876c0223e82</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1976,6 +1981,20 @@
       <anchor>a715f4fc285eae134d92c8ef07a862a01</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setInitialCondition</name>
+      <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
+      <anchor>a6ebae9d0cd244a12f2779c82c0ec8091</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int index, double &amp;scalar_IC, dealii::Vector&lt; double &gt; &amp;vector_IC)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>setNonUniformDirichletBCs</name>
+      <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
+      <anchor>a43752bc3ba8c2a7ccbbbddfc63ccfaad</anchor>
+      <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int index, const unsigned int direction, const double time, double &amp;scalar_BC, dealii::Vector&lt; double &gt; &amp;vector_BC)=0</arglist>
+    </member>
     <member kind="variable">
       <type>std::vector&lt; Field&lt; dim &gt; &gt;</type>
       <name>fields</name>
@@ -2111,23 +2130,23 @@
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
-      <name>residualExplicitRHS</name>
+      <name>explicitEquationRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>ad9277b675a5c9776f55988b403c4190b</anchor>
+      <anchor>a97ee30155d0f2301af0031e2a2d28df4</anchor>
       <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
-      <name>residualNonexplicitRHS</name>
+      <name>nonExplicitEquationRHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>af94d5d5c0c8e07e44101e1bfdcee0790</anchor>
+      <anchor>af5c41f390f9af5b81805606a24124e6a</anchor>
       <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
-      <name>residualLHS</name>
+      <name>equationLHS</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a96e137c73375d56af4af0e40a4ec7612</anchor>
+      <anchor>af2c38486672f1adbdd4b8a544f03361d</anchor>
       <arglist>(variableContainer&lt; dim, degree, dealii::VectorizedArray&lt; double &gt; &gt; &amp;variable_list, dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc) const =0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
@@ -2558,6 +2577,27 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>hasExplicitEquation</name>
+      <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
+      <anchor>a25351c851253d1b130d7a92643870574</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>hasNonExplicitEquation</name>
+      <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
+      <anchor>ad64276d5ba1bcae97602af0f93a50077</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>bool</type>
+      <name>has_Dirichlet_BCs</name>
+      <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
+      <anchor>a49e03fd3527803292a717efdea283b7f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>unsigned int</type>
       <name>parabolicFieldIndex</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
@@ -2843,12 +2883,13 @@
     <name>NonUniformDirichletBC</name>
     <filename>class_non_uniform_dirichlet_b_c.html</filename>
     <templarg>dim</templarg>
+    <templarg>degree</templarg>
     <member kind="function">
       <type></type>
       <name>NonUniformDirichletBC</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
-      <anchor>a158f2dd666f3e057b7b059767d7ceb0e</anchor>
-      <arglist>(const unsigned int _index, const unsigned int _direction, const double _time, const userInputParameters&lt; dim &gt; _userInputs)</arglist>
+      <anchor>a05e90701f7e3e8f85b81f95f59331db5</anchor>
+      <arglist>(const unsigned int _index, const unsigned int _direction, const double _time, MatrixFreePDE&lt; dim, degree &gt; *_matrix_free_pde)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2858,78 +2899,93 @@
       <arglist>(const dealii::Point&lt; dim &gt; &amp;p, const unsigned int component=0) const</arglist>
     </member>
     <member kind="variable">
+      <type>dealii::Vector&lt; double &gt;</type>
+      <name>values</name>
+      <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
+      <anchor>a407a445f9d0e4f15b159fa66058bef9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
       <type>const unsigned int</type>
       <name>index</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
       <anchor>ad50032c86051707cc49a8ded34ea39cc</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
+    <member kind="variable" protection="private">
       <type>const unsigned int</type>
       <name>direction</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
       <anchor>a7eb8a42147cf0ba3ee4265aa9d0655bd</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
+    <member kind="variable" protection="private">
       <type>const double</type>
       <name>time</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
       <anchor>a97f443479343d27ae6800e77d16ae3f1</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
-      <type>const userInputParameters&lt; dim &gt;</type>
-      <name>userInputs</name>
+    <member kind="variable" protection="private">
+      <type>MatrixFreePDE&lt; dim, degree &gt; *</type>
+      <name>matrix_free_pde</name>
       <anchorfile>class_non_uniform_dirichlet_b_c.html</anchorfile>
-      <anchor>a679378dc93ff06d974a1ead4213456cc</anchor>
+      <anchor>a4b0c3c4ae46e4354f9a61876c0223e82</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
-    <name>NonUniformDirichletBCVec</name>
-    <filename>class_non_uniform_dirichlet_b_c_vec.html</filename>
+    <name>NonUniformDirichletBCVector</name>
+    <filename>class_non_uniform_dirichlet_b_c_vector.html</filename>
     <templarg>dim</templarg>
+    <templarg>degree</templarg>
     <member kind="function">
       <type></type>
-      <name>NonUniformDirichletBCVec</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
-      <anchor>a6a75956fac04d90d10775bbd119224e2</anchor>
-      <arglist>(const unsigned int _index, const unsigned int _direction, const double _time, const userInputParameters&lt; dim &gt; _userInputs)</arglist>
+      <name>NonUniformDirichletBCVector</name>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
+      <anchor>a118af5e44efd659bbf50e992ecb42b39</anchor>
+      <arglist>(const unsigned int _index, const unsigned int _direction, const double _time, MatrixFreePDE&lt; dim, degree &gt; *_matrix_free_pde)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>vector_value</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
       <anchor>a6b395dc56b44e07541c7e6dfccfc3b1e</anchor>
       <arglist>(const dealii::Point&lt; dim &gt; &amp;p, dealii::Vector&lt; double &gt; &amp;vector_BC) const</arglist>
     </member>
     <member kind="variable">
+      <type>dealii::Vector&lt; double &gt;</type>
+      <name>values</name>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
+      <anchor>a407a445f9d0e4f15b159fa66058bef9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
       <type>const unsigned int</type>
       <name>index</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
       <anchor>ad50032c86051707cc49a8ded34ea39cc</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
+    <member kind="variable" protection="private">
       <type>const unsigned int</type>
       <name>direction</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
       <anchor>a7eb8a42147cf0ba3ee4265aa9d0655bd</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
+    <member kind="variable" protection="private">
       <type>const double</type>
       <name>time</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
       <anchor>a97f443479343d27ae6800e77d16ae3f1</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
-      <type>const userInputParameters&lt; dim &gt;</type>
-      <name>userInputs</name>
-      <anchorfile>class_non_uniform_dirichlet_b_c_vec.html</anchorfile>
-      <anchor>a679378dc93ff06d974a1ead4213456cc</anchor>
+    <member kind="variable" protection="private">
+      <type>MatrixFreePDE&lt; dim, degree &gt; *</type>
+      <name>matrix_free_pde</name>
+      <anchorfile>class_non_uniform_dirichlet_b_c_vector.html</anchorfile>
+      <anchor>a4b0c3c4ae46e4354f9a61876c0223e82</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3139,6 +3195,52 @@
       <name>newnuclei</name>
       <anchorfile>classparallel_nucleation_list.html</anchorfile>
       <anchor>ad343e89b3a978489e45399845838776e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ParseCommandLineOpts</name>
+    <filename>class_parse_command_line_opts.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ParseCommandLineOpts</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>a628a1c626a1eb2702d551e48d7193ca0</anchor>
+      <arglist>(int &amp;_argc, char **argv)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>getParametersFilename</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>a9e3184e888cded52f23cd58cebf245e9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>const std::string &amp;</type>
+      <name>getCmdOption</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>a062d5fc71964db6a6136b57345721919</anchor>
+      <arglist>(const std::string &amp;option) const</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>bool</type>
+      <name>cmdOptionExists</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>a5d96d7420f9e6642aac6a34ba06c8e1a</anchor>
+      <arglist>(const std::string &amp;option) const</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>argc</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>ad1447518f4372828b8435ae82e48499e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::vector&lt; std::string &gt;</type>
+      <name>tokens</name>
+      <anchorfile>class_parse_command_line_opts.html</anchorfile>
+      <anchor>a95f390fed5ef1526cfc191c6b07916a3</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4480,30 +4582,30 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_dependencies_value_residual_term_RHS</name>
+      <name>set_dependencies_value_term_RHS</name>
       <anchorfile>classvariable_attribute_loader.html</anchorfile>
-      <anchor>a74344f514f658ea519e1a0b2d94c5b63</anchor>
+      <anchor>a963295f4c27bbe76858de5e06a17b270</anchor>
       <arglist>(unsigned int index, std::string dependencies)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_dependencies_gradient_residual_term_RHS</name>
+      <name>set_dependencies_gradient_term_RHS</name>
       <anchorfile>classvariable_attribute_loader.html</anchorfile>
-      <anchor>a5f7d8dd3f6c9120d923537f6d5784693</anchor>
+      <anchor>afdf0214f8443d81c9da9b252e63e750f</anchor>
       <arglist>(unsigned int index, std::string dependencies)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_dependencies_value_residual_term_LHS</name>
+      <name>set_dependencies_value_term_LHS</name>
       <anchorfile>classvariable_attribute_loader.html</anchorfile>
-      <anchor>a4a2a7e723c14a3a0d5688198b868c330</anchor>
+      <anchor>abb36ff02a75e09051cc0eaa76404457a</anchor>
       <arglist>(unsigned int index, std::string dependencies)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_dependencies_gradient_residual_term_LHS</name>
+      <name>set_dependencies_gradient_term_LHS</name>
       <anchorfile>classvariable_attribute_loader.html</anchorfile>
-      <anchor>a636049afaf0f6bc94089fb408e6ab2fe</anchor>
+      <anchor>a281ff908af64a2c875dc503641e5c3ed</anchor>
       <arglist>(unsigned int index, std::string dependencies)</arglist>
     </member>
     <member kind="variable">
@@ -5005,58 +5107,58 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_scalar_value_residual_term</name>
+      <name>set_scalar_value_term_RHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>ae2bacd1fda3217a72ecaf93c94855652</anchor>
+      <anchor>a092cb96ea64d8c99f96f23cb0950c52c</anchor>
       <arglist>(unsigned int global_variable_index, T val)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_scalar_gradient_residual_term</name>
+      <name>set_scalar_gradient_term_RHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>acd84985aeedbfe2cb822742730ca0e31</anchor>
+      <anchor>acc62490f09c22d38f2c041c23c00ca17</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 1, dim, T &gt; grad)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_vector_value_residual_term</name>
+      <name>set_vector_value_term_RHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a228512517dc354144d2ee97bfa0d1627</anchor>
+      <anchor>a7c8f05a1535560d8e859eaecd0f94c8a</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 1, dim, T &gt; val)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_vector_gradient_residual_term</name>
+      <name>set_vector_gradient_term_RHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>ad244ace7b1bfb549dac979fdcd999825</anchor>
+      <anchor>a011e47b94c44215b3bd7ed8ed2019584</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 2, dim, T &gt; grad)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_scalar_value_residual_term_LHS</name>
+      <name>set_scalar_value_term_LHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a15b919d4844269efffa1a1ab03daf4b3</anchor>
+      <anchor>a73366838a7780e0e7f6252fc23269923</anchor>
       <arglist>(unsigned int global_variable_index, T val)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_scalar_gradient_residual_term_LHS</name>
+      <name>set_scalar_gradient_term_LHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a1c988fe92152d808b6b33fd24b36bd4b</anchor>
+      <anchor>a88314f2db514db1c88fe0ca0c6b5f98f</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 1, dim, T &gt; grad)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_vector_value_residual_term_LHS</name>
+      <name>set_vector_value_term_LHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>af52c94cfef777eac5aab3a1455efeb52</anchor>
+      <anchor>a6ff86270afa43a0f8d439d5d1c8a37f4</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 1, dim, T &gt; val)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>set_vector_gradient_residual_term_LHS</name>
+      <name>set_vector_gradient_term_LHS</name>
       <anchorfile>classvariable_container.html</anchorfile>
-      <anchor>a10ce824240f344ad29fe3e5c140b1112</anchor>
+      <anchor>a93070ecbdb726cf276ef1b0131d9bee1</anchor>
       <arglist>(unsigned int global_variable_index, dealii::Tensor&lt; 2, dim, T &gt; grad)</arglist>
     </member>
     <member kind="function">
@@ -5310,7 +5412,7 @@
   </compound>
   <compound kind="page">
     <name>running_apps</name>
-    <title>Running a PRISMS-PF Example Application</title>
+    <title>Running a PRISMS-PF Example App</title>
     <filename>running_apps</filename>
   </compound>
   <compound kind="page">

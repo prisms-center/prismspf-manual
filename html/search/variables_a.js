@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['matrix_5ffree_5fpde',['matrix_free_pde',['../class_initial_condition.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'InitialCondition::matrix_free_pde()'],['../class_initial_condition_vector.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'InitialConditionVector::matrix_free_pde()'],['../class_non_uniform_dirichlet_b_c.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'NonUniformDirichletBC::matrix_free_pde()'],['../class_non_uniform_dirichlet_b_c_vector.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'NonUniformDirichletBCVector::matrix_free_pde()']]],
   ['matrixfreeobject',['matrixFreeObject',['../class_matrix_free_p_d_e.html#aab1d495720103a33c9f29e9ed29db819',1,'MatrixFreePDE']]],
   ['max_5fiterations',['max_iterations',['../class_nonlinear_solver_parameters.html#a6d1fb853793cdbd341600473a0168fc2',1,'NonlinearSolverParameters']]],
   ['max_5fiterations_5flist',['max_iterations_list',['../class_linear_solver_parameters.html#aa87bf902f5bb63249c0a03ab6c0263b6',1,'LinearSolverParameters']]],

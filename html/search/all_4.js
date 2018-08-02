@@ -8,5 +8,7 @@ var searchData=
   ['equationdependencyparser',['EquationDependencyParser',['../class_equation_dependency_parser.html',1,'']]],
   ['equationdependencyparser_2ecc',['EquationDependencyParser.cc',['../_equation_dependency_parser_8cc.html',1,'']]],
   ['equationdependencyparser_2eh',['EquationDependencyParser.h',['../_equation_dependency_parser_8h.html',1,'']]],
-  ['explicit_5ftime_5fdependent',['EXPLICIT_TIME_DEPENDENT',['../var_type_enums_8h.html#a12521d5d4cf2d9ed3c05e52b162fad42ad2de71eecbf16bf515fd3c59269e6a1d',1,'varTypeEnums.h']]]
+  ['equationlhs',['equationLHS',['../class_matrix_free_p_d_e.html#af2c38486672f1adbdd4b8a544f03361d',1,'MatrixFreePDE']]],
+  ['explicit_5ftime_5fdependent',['EXPLICIT_TIME_DEPENDENT',['../var_type_enums_8h.html#a12521d5d4cf2d9ed3c05e52b162fad42ad2de71eecbf16bf515fd3c59269e6a1d',1,'varTypeEnums.h']]],
+  ['explicitequationrhs',['explicitEquationRHS',['../class_matrix_free_p_d_e.html#a97ee30155d0f2301af0031e2a2d28df4',1,'MatrixFreePDE']]]
 ];

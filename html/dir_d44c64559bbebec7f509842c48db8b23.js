@@ -1,6 +1,5 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
-    [ "dealIIheaders.h", "deal_i_iheaders_8h.html", null ],
     [ "EquationDependencyParser.h", "_equation_dependency_parser_8h.html", [
       [ "EquationDependencyParser", "class_equation_dependency_parser.html", "class_equation_dependency_parser" ]
     ] ],
@@ -8,10 +7,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "Field", "class_field.html", "class_field" ]
     ] ],
     [ "FloodFiller.h", "_flood_filler_8h.html", "_flood_filler_8h" ],
-    [ "initialCondition_template_instantiations.h", "initial_condition__template__instantiations_8h.html", null ],
     [ "initialConditions.h", "initial_conditions_8h.html", [
       [ "InitialCondition", "class_initial_condition.html", "class_initial_condition" ],
-      [ "InitialConditionVec", "class_initial_condition_vec.html", "class_initial_condition_vec" ]
+      [ "InitialConditionVector", "class_initial_condition_vector.html", "class_initial_condition_vector" ]
     ] ],
     [ "inputFileReader.h", "input_file_reader_8h.html", [
       [ "inputFileReader", "classinput_file_reader.html", "classinput_file_reader" ]
@@ -25,9 +23,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "nonUniformDirichletBC.h", "non_uniform_dirichlet_b_c_8h.html", [
       [ "NonUniformDirichletBC", "class_non_uniform_dirichlet_b_c.html", "class_non_uniform_dirichlet_b_c" ],
-      [ "NonUniformDirichletBCVec", "class_non_uniform_dirichlet_b_c_vec.html", "class_non_uniform_dirichlet_b_c_vec" ]
+      [ "NonUniformDirichletBCVector", "class_non_uniform_dirichlet_b_c_vector.html", "class_non_uniform_dirichlet_b_c_vector" ]
     ] ],
-    [ "nonUniformDirichletBC_template_instantiations.h", "non_uniform_dirichlet_b_c__template__instantiations_8h.html", null ],
     [ "nucleationParameters.h", "nucleation_parameters_8h.html", [
       [ "nucleationParameters", "classnucleation_parameters.html", "classnucleation_parameters" ]
     ] ],
@@ -39,6 +36,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "parallelNucleationList.h", "parallel_nucleation_list_8h.html", [
       [ "parallelNucleationList", "classparallel_nucleation_list.html", "classparallel_nucleation_list" ]
+    ] ],
+    [ "ParseCommandLineOpts.h", "_parse_command_line_opts_8h.html", [
+      [ "ParseCommandLineOpts", "class_parse_command_line_opts.html", "class_parse_command_line_opts" ]
     ] ],
     [ "postProcessedFields.h", "post_processed_fields_8h.html", "post_processed_fields_8h" ],
     [ "SimplifiedGrainRepresentation.h", "_simplified_grain_representation_8h.html", [

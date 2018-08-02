@@ -1,4 +1,18 @@
 error: Tag file `/opt/software/numerics/dealiiDir/doc/doxygen/deal.tag' does not exist or is not a file. Skipping it...
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/tests/unit_tests/boundaryConditions.cc:19: warning: no uniquely matching class member found for 
+  template < dim >
+  void vector_value(const dealii::Point< dim > &p, dealii::Vector< double > &vector_BC) const
+
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/tests/unit_tests/initialConditions.cc:18: warning: no uniquely matching class member found for 
+  template < dim >
+  void vector_value(const dealii::Point< dim > &p, dealii::Vector< double > &vector_IC) const
+
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/frontpage.md:4: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:26: warning: Found unknown command `\beta'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:41: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:45: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:26: warning: Found unknown command `\beta'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:41: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:45: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/README.md:26: warning: explicit link request to 'DE' could not be resolved
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/README.md:26: warning: explicit link request to 'DE' could not be resolved

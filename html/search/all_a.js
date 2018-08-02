@@ -5,6 +5,7 @@ var searchData=
   ['maketriangulation',['makeTriangulation',['../class_matrix_free_p_d_e.html#a22e030842c2feaeea8ec0b71aa39d1a7',1,'MatrixFreePDE']]],
   ['markboundaries',['markBoundaries',['../class_matrix_free_p_d_e.html#af7d704fe7970d0a596798ca3776b860c',1,'MatrixFreePDE']]],
   ['markboundaries_2ecc',['markBoundaries.cc',['../mark_boundaries_8cc.html',1,'']]],
+  ['matrix_5ffree_5fpde',['matrix_free_pde',['../class_initial_condition.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'InitialCondition::matrix_free_pde()'],['../class_initial_condition_vector.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'InitialConditionVector::matrix_free_pde()'],['../class_non_uniform_dirichlet_b_c.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'NonUniformDirichletBC::matrix_free_pde()'],['../class_non_uniform_dirichlet_b_c_vector.html#a4b0c3c4ae46e4354f9a61876c0223e82',1,'NonUniformDirichletBCVector::matrix_free_pde()']]],
   ['matrixfreeobject',['matrixFreeObject',['../class_matrix_free_p_d_e.html#aab1d495720103a33c9f29e9ed29db819',1,'MatrixFreePDE']]],
   ['matrixfreepde',['MatrixFreePDE',['../class_matrix_free_p_d_e.html',1,'MatrixFreePDE&lt; dim, degree &gt;'],['../class_matrix_free_p_d_e.html#a2687789df6132f733302b9a1f0b49f8f',1,'MatrixFreePDE::MatrixFreePDE()']]],
   ['matrixfreepde_2ecc',['matrixFreePDE.cc',['../matrix_free_p_d_e_8cc.html',1,'']]],

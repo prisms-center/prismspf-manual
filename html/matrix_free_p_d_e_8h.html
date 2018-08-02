@@ -114,14 +114,33 @@ $(document).ready(function(){initNavTree('matrix_free_p_d_e_8h.html','');});
 <div class="textblock"><code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
-<code>#include &quot;<a class="el" href="deal_i_iheaders_8h_source.html">dealIIheaders.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="var_b_cs_8h_source.html">varBCs.h</a>&quot;</code><br />
+<code>#include &lt;deal.II/base/quadrature.h&gt;</code><br />
+<code>#include &lt;deal.II/base/timer.h&gt;</code><br />
+<code>#include &lt;deal.II/lac/vector.h&gt;</code><br />
+<code>#include &lt;deal.II/lac/constraint_matrix.h&gt;</code><br />
+<code>#include &lt;deal.II/fe/fe_system.h&gt;</code><br />
+<code>#include &lt;deal.II/fe/fe_q.h&gt;</code><br />
+<code>#include &lt;deal.II/fe/fe_values.h&gt;</code><br />
+<code>#include &lt;deal.II/grid/tria.h&gt;</code><br />
+<code>#include &lt;deal.II/grid/tria_accessor.h&gt;</code><br />
+<code>#include &lt;deal.II/grid/tria_iterator.h&gt;</code><br />
+<code>#include &lt;deal.II/grid/grid_tools.h&gt;</code><br />
+<code>#include &lt;deal.II/dofs/dof_tools.h&gt;</code><br />
+<code>#include &lt;deal.II/dofs/dof_handler.h&gt;</code><br />
+<code>#include &lt;deal.II/numerics/vector_tools.h&gt;</code><br />
+<code>#include &lt;deal.II/lac/parallel_vector.h&gt;</code><br />
+<code>#include &lt;deal.II/matrix_free/matrix_free.h&gt;</code><br />
+<code>#include &lt;deal.II/matrix_free/fe_evaluation.h&gt;</code><br />
+<code>#include &lt;deal.II/base/config.h&gt;</code><br />
+<code>#include &lt;deal.II/base/exceptions.h&gt;</code><br />
+<code>#include &lt;deal.II/distributed/tria.h&gt;</code><br />
+<code>#include &lt;deal.II/distributed/solution_transfer.h&gt;</code><br />
+<code>#include &lt;deal.II/grid/manifold_lib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="fields_8h_source.html">fields.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="user_input_parameters_8h_source.html">userInputParameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nucleus_8h_source.html">nucleus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="variable_value_container_8h_source.html">variableValueContainer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="variable_container_8h_source.html">variableContainer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_equation_dependency_parser_8h_source.html">EquationDependencyParser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_simplified_grain_representation_8h_source.html">SimplifiedGrainRepresentation.h</a>&quot;</code><br />
 </div>
 <p><a href="matrix_free_p_d_e_8h_source.html">Go to the source code of this file.</a></p>
@@ -160,7 +179,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00032">32</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00051">51</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +196,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00025">25</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00044">44</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +212,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00028">28</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix_free_p_d_e_8h_source.html#l00047">47</a> of file <a class="el" href="matrix_free_p_d_e_8h_source.html">matrixFreePDE.h</a>.</p>
 
 </div>
 </div>

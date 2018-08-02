@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['dealiiheaders_2eh',['dealIIheaders.h',['../deal_i_iheaders_8h.html',1,'']]],
   ['declare_5fparameters',['declare_parameters',['../classinput_file_reader.html#aabeb8db32b5d7d16ec2c0b9d7284514c',1,'inputFileReader']]],
   ['default_5fdamping_5fcoefficient_5flist',['default_damping_coefficient_list',['../class_nonlinear_solver_parameters.html#a86ee4139815451220352e88a059c2f12',1,'NonlinearSolverParameters']]],
   ['degree',['degree',['../classuser_input_parameters.html#a94fb130f6b431eca981ab6866faa3e76',1,'userInputParameters']]],
-  ['direction',['direction',['../class_non_uniform_dirichlet_b_c.html#a7eb8a42147cf0ba3ee4265aa9d0655bd',1,'NonUniformDirichletBC::direction()'],['../class_non_uniform_dirichlet_b_c_vec.html#a7eb8a42147cf0ba3ee4265aa9d0655bd',1,'NonUniformDirichletBCVec::direction()']]],
+  ['direction',['direction',['../class_non_uniform_dirichlet_b_c.html#a7eb8a42147cf0ba3ee4265aa9d0655bd',1,'NonUniformDirichletBC::direction()'],['../class_non_uniform_dirichlet_b_c_vector.html#a7eb8a42147cf0ba3ee4265aa9d0655bd',1,'NonUniformDirichletBCVector::direction()']]],
   ['dirichlet',['DIRICHLET',['../var_b_cs_8h.html#a1b857ce330597f3389336178f05a6b74a1c2adefa6a3b7015b29913c49ee050c7',1,'varBCs.h']]],
   ['distance_5fto_5fneighbor_5fsharing_5fop',['distance_to_neighbor_sharing_op',['../class_simplified_grain_representation.html#a72b86e2e98083c709667f514b1fd95d8',1,'SimplifiedGrainRepresentation']]],
   ['dofhandlersset',['dofHandlersSet',['../class_matrix_free_p_d_e.html#a973f69c1586b481a8c7e583f73144d9e',1,'MatrixFreePDE']]],

@@ -6,6 +6,7 @@ var searchData=
   ['checkpoint_2ecc',['checkpoint.cc',['../checkpoint_8cc.html',1,'']]],
   ['checkpointtimesteplist',['checkpointTimeStepList',['../classuser_input_parameters.html#ae42b902e287ebfa8b451ae342aa5d9fd',1,'userInputParameters']]],
   ['cij_5ftensor_5fsize',['CIJ_tensor_size',['../class_matrix_free_p_d_e.html#afc0215e3a3217565e6b0d65aeea308ab',1,'MatrixFreePDE']]],
+  ['cmdoptionexists',['cmdOptionExists',['../class_parse_command_line_opts.html#a5d96d7420f9e6642aac6a34ba06c8e1a',1,'ParseCommandLineOpts']]],
   ['compareunsortedvectors',['compareUnsortedVectors',['../test___flood_filler_8h.html#a6c8f1262eb9b590faa17c0f5f3466d70',1,'test_FloodFiller.h']]],
   ['computeexplicitrhs',['computeExplicitRHS',['../class_matrix_free_p_d_e.html#a029e993a7a65cc52941201fa21b16e0f',1,'MatrixFreePDE']]],
   ['computeintegral',['computeIntegral',['../class_matrix_free_p_d_e.html#a356e9d5fc8a07c8c40257c52289d3bb8',1,'MatrixFreePDE']]],
