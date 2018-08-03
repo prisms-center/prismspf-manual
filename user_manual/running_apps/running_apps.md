@@ -43,29 +43,29 @@ The first command moves from the ''phaseField'' directory to the directory of th
 As the program runs, information from each time step outputs to the terminal window. After the simulation is complete, a summary the time taken in a few major sections of the code and the total wall time is printed to the terminal window.
 
 Here is a screenshot of typical output from CMake as you create the \emph{makefile}:
-![](../images/cmake_output_v2.png)
+![](../user_manual/images/cmake_output_v2.png)
 
 Don't worry if the output isn't exactly the same as what you see, the details of some of the messages depend on your operating system and which compilers you have installed. The important part is that the bottom three messages are ''Configuring done'', ''Generating done'', and ''Build files have been written to: ...''. In the future, entering ''\$ cmake .'' will result in a shorter set of messages because CMake caches some variables from the last time it was run. As a result, you can omit the CMake step for future simulations as long as the path name to your current directory is unchanged and your installation of deal.II is unchanged.
 
 Here is a screenshot of typical output from the compiler as you compile the executable:
-![](../images/compile_output.png)
+![](../user_manual/images/compile_output.png)
 
 Depending on your version of deal.II, different warnings may appear as you compile. Common warnings include the use of functions that deal.II has marked as depricated (as in the screenshot above) and unused type definitions. In this case, PRISMS-PF uses these functions for backward compatability with deal.II version 8.4.x. We will switch to the updated functions in the near future.
 
 Once the simultation is complete, the terminal output at the end of the simulation should look like:
 
-![](../images/allenCahn_output.png)
+![](../user_manual/images/allenCahn_output.png)
 
 ## What Can Go Wrong
 If you were able to enter all of the commands in the previous section and get output similar to the screenshots, congratulations! you just ran your first PRISMS-PF simulation. If not, you may be experiencing one of the common issues listed below.
 
 If CMake gives an error message like this:
-![](../images/cmake_no_period.png)
+![](../user_manual/images/cmake_no_period.png)
 
 Then you likely forgot the period at the end of the command ```$ cmake .```.
 
 If CMake gives an error message like this:
-![](../images/cmake_no_dealii.png)
+![](../user_manual/images/cmake_no_dealii.png)
 
 CMake cannot find your installation of deal.ii. This issue is probably caused by the lack of an environment variable pointing to the directory containing your deal.II library. You can check this with the following command:
 ```
@@ -91,23 +91,23 @@ ParaView: http://www.paraview.org/
 To get you started, here is a brief tutorial on how to use VisIt to visualize your simulation results. For more detailed instructions, please consult the [VisIt manual](https://wci.llnl.gov/simulation/computer-codes/visit/manuals).
 
 After launching the VisIt application, click ''Open'' and find the directory for the Allen Cahn example:
-![](../images/visit_open.png)
+![](../user_manual/images/visit_open.png)
 
 and select ''solution-\*.pvtu'':
-![](../images/visit_path.png)
+![](../user_manual/images/visit_path.png)
 
 Next, click ''Add'', hover over ''Pseudocolor'', and select ''n'':
-![](../images/visit_add.png)
+![](../user_manual/images/visit_add.png)
 
 Next, click ''Draw'' to make a plot:
-![](../images/visit_pseudocolor.png)
+![](../user_manual/images/visit_pseudocolor.png)
 
 The VisIt window will now have a plot of the initial condition of the order parameter:
-![](../images/visit_result.png)
+![](../user_manual/images/visit_result.png)
 
 The result at other time steps can be visualized by dragging the time bar, or using the controls directly below the time bar. Dragging the time bar to the end will display the final result of the simulation:
-![](../images/visit_time_bar.png)
-![](../images/visit_final_result.png)
+![](../user_manual/images/visit_time_bar.png)
+![](../user_manual/images/visit_final_result.png)
 
 VisIt has a wide variety of capabilities for visualizing 1D, 2D, and 3D data, including postprocessing of output fields (e.g. to obtain the result of mathematical expressions involving one or more output field). VisIt also has a powerful Python interface to provide scripting capabilities. More more instructions on how to use these, and other, features of VisIt, please consult the [VisIt manual](https://wci.llnl.gov/simulation/computer-codes/visit/manuals).
 

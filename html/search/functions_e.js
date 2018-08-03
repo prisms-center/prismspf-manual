@@ -12,9 +12,7 @@ var searchData=
   ['remap',['remap',['../class_order_parameter_remapper.html#acfccf1829f4a2a861e47adfba4c4ceef',1,'OrderParameterRemapper']]],
   ['remap_5ffrom_5findex_5ffield',['remap_from_index_field',['../class_order_parameter_remapper.html#ac3275d20ea31003e3eb8090b77971293',1,'OrderParameterRemapper']]],
   ['removesubsetofnuclei',['removeSubsetOfNuclei',['../classparallel_nucleation_list.html#abbd2e2215b5bf8859484cc2dc6112dc7',1,'parallelNucleationList']]],
-  ['residualexplicitrhs',['residualExplicitRHS',['../classtest_inv_m.html#ab12aec8939565e6332541a0a36db6dea',1,'testInvM::residualExplicitRHS()'],['../classset_rigid_body_mode_constraints_test.html#ab12aec8939565e6332541a0a36db6dea',1,'setRigidBodyModeConstraintsTest::residualExplicitRHS()']]],
-  ['residuallhs',['residualLHS',['../classtest_inv_m.html#ad16d35963db0b282be83eaa2749d921e',1,'testInvM::residualLHS()'],['../classtest_output_results.html#ad16d35963db0b282be83eaa2749d921e',1,'testOutputResults::residualLHS()'],['../classset_rigid_body_mode_constraints_test.html#ad16d35963db0b282be83eaa2749d921e',1,'setRigidBodyModeConstraintsTest::residualLHS()']]],
-  ['residualnonexplicitrhs',['residualNonexplicitRHS',['../classtest_inv_m.html#ad6cbfa8f6560c4fed978b6ffe1d40183',1,'testInvM::residualNonexplicitRHS()'],['../classset_rigid_body_mode_constraints_test.html#ad6cbfa8f6560c4fed978b6ffe1d40183',1,'setRigidBodyModeConstraintsTest::residualNonexplicitRHS()']]],
+  ['residuallhs',['residualLHS',['../classtest_output_results.html#ad16d35963db0b282be83eaa2749d921e',1,'testOutputResults']]],
   ['residualrhs',['residualRHS',['../classtest_output_results.html#a85cc4ed99c3a130df6cc37d7863b1610',1,'testOutputResults']]],
   ['resolvenucleationconflicts',['resolveNucleationConflicts',['../classparallel_nucleation_list.html#a2bade43ad9197049f681735d35fbe343',1,'parallelNucleationList']]]
 ];
