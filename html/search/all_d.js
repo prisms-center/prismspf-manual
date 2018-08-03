@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['prisms_2dpf',['PRISMS-PF',['../index.html',1,'']]],
   ['prisms_2dpf_20user_20manual',['PRISMS-PF User Manual',['../manual.html',1,'']]],
   ['parabolicfieldindex',['parabolicFieldIndex',['../class_matrix_free_p_d_e.html#a865006c41fc637fb0260d30299f21a4e',1,'MatrixFreePDE']]],
   ['parallelnucleationlist',['parallelNucleationList',['../classparallel_nucleation_list.html',1,'parallelNucleationList&lt; dim &gt;'],['../classparallel_nucleation_list.html#ae7bfe9e70c49e4dcb2547236e95cf3cc',1,'parallelNucleationList::parallelNucleationList()']]],

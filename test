@@ -523,11 +523,6 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>README.md</name>
-    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/</path>
-    <filename>_r_e_a_d_m_e_8md</filename>
-  </compound>
-  <compound kind="file">
     <name>EquationDependencyParser.cc</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/src/EquationDependencyParser/</path>
     <filename>_equation_dependency_parser_8cc</filename>
@@ -1130,6 +1125,11 @@
     <name>variableAttributeLoader_test.cc</name>
     <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/phaseField_dev/tests/unit_tests/</path>
     <filename>variable_attribute_loader__test_8cc</filename>
+  </compound>
+  <compound kind="file">
+    <name>landing_page.md</name>
+    <path>/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/</path>
+    <filename>landing__page_8md</filename>
   </compound>
   <compound kind="file">
     <name>app_files.md</name>
@@ -5437,7 +5437,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>PRISMS-PF</title>
+    <title>Welcome</title>
     <filename>index</filename>
   </compound>
 </tagfile>
