@@ -30,7 +30,7 @@ One option when installing PRISMS-PF is to install it and all of its prerequisit
 
 1. [Install Docker](https://docs.docker.com/install/)
 2. Create a directory on your computer to hold the PRISMS-PF applications folder (e.g. ```$ mkdir ~/DockerWorkspace```) and go to that directory (e.g. ```$ cd ~/DockerWorkspace```)
-3. Clone the PRISMS-PF repository ($ git clone https://github.com/prisms-center/phaseField)
+3. Clone the PRISMS-PF repository (```$ git clone https://github.com/prisms-center/phaseField```)
 4. Get the PRISMS-PF Docker image (```$ docker pull stvdwtt/prismspf:prismspf```)
 5. Now, launch the Docker container, linking the PRISMS-PF applications folder in the container to your local one: (e.g.  ```$ docker run -ti -v ~/DockerWorkspace/phaseField/applications:/home/dealii/phaseField/applications stvdwtt/prismspf:prismspf```)
 

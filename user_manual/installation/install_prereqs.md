@@ -6,13 +6,14 @@ Before downloading and installing PRISMS-PF itself, one should install CMake and
 CMake can be downloaded at: https://cmake.org/download, which also has installation instructions. It is also available through package managers such as homebrew, yum, and apt.
 
 Once installed, be sure to add CMake to your path by entering:
-
-`$ PATH="/path/to/cmake/Contents/bin":"$PATH" `
+```
+$ PATH="/path/to/cmake/Contents/bin":"$PATH"
+```
 
 filling in the path to the installation of CMake (for example, on Mac OS, the default installation path is /Applications/CMake.app/Contents/bin). For convience, we recommend adding this line to your bash profile. Your bash profile can be opened via the following terminal command
-
-`$ vi ~/.profile`
-
+```
+$ vi ~/.profile
+```
 
 ## Installing deal.II
 deal.II can be downloaded at https://www.dealii.org/download.html, which also has instructions. The deal.II installation process depends on your operating system. PRISMS-PF has been tested with deal.II versions 8.4.2 through 9.0.0. We recommend using deal.II 9.0.0, if possible.
@@ -52,7 +53,4 @@ $ make install
 where ''/path/to/install/dir'' is the path to where you want to install deal.II. After installation is complete (which can take take up to an hour), open the file ''summary.log''. The second section of the log file lists the configured features. Ensure that DEAL_II_WITH_MPI and DEAL_II_WITH_P4EST say either ''set up with bundled packages'' or ''set up with external dependences''. If either is listed as ''OFF'', then deal.II was unable to find MPI or p4est. If this is the case, double check that MPI and p4est were installed correctly.
 
 ### Installation using candi
-An alternative route is to use the following candi (compile and install) script to install deal.II and its prerequisites:
-https://github.com/koecher/candi
-
-If it works, it should be much simpler than the traditional route described above. However in limited attempts, we have not been able to successfully install deal.II with candi. After more testing and/or consultation with the developer, we hope to make this a plausible option.
+An alternative route is to use the [candi (compile and install)](https://github.com/koecher/candi) script to install deal.II and its prerequisites. If it works, it should be much simpler than the traditional route described above. While some users have reported success using this approach, it hasn't worked for everyone.

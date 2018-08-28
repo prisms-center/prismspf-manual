@@ -23,7 +23,7 @@ After deal.II and PRISMS-PF are downloaded, you can run the pre-built PRISMS-PF 
 - grainGrowth_dream3D: An implementation of coupled Allen-Cahn equations simulating grain growth in two dimensions with an initial microstructure imported from Dream3D. (2D)
 - precipiateEvolution: An implementation of the coupled Cahn-Hilliard/Allen-Cahn/Linear Elasticity equations often used in phase field simulation of precipitate evolution. (2D)
 - precipiateEvolution_pfunction: Like precipitateEvolution, but loads inputs using PRISMS IntegrationTools. (2D)
-- MgNd_precipitate_single_Bppp: Similar to precipiateEvolution, but uses the KKS model rather than the WBM model for the free energy functional. The parameters are set for $\beta$''' precipitates in an Mg-Nd alloy from [this publication](https://www.sciencedirect.com/science/article/pii/S1359645417305281) (3D)
+- MgNd_precipitate_single_Bppp: Similar to precipiateEvolution, but uses the KKS model rather than the WBM model for the free energy functional. The parameters are set for \f$\beta\f$''' precipitates in an Mg-Nd alloy from [this publication](https://www.sciencedirect.com/science/article/pii/S1359645417305281). (3D)
 - nucleationModel: KKS precipitation model that makes use of the PRISMS-PF explicit nucleation capabilities. (2D)
 - nucleationModel_preferential: Like nucleationModel, but with a zone with an increased nucleation rate to simulate a grain boundary. (2D)
 
@@ -86,6 +86,7 @@ Most of issues users have had are during the CMake step. If the fixes suggested 
 Once you have successfully run a simulation, you will likely want to visualize the results.  PRISMS-PF output files are generated in the popular VTK format, as a series of .vtu and .pvtu files. Two common open-soure, multi-platform visualization tools for these types of files are VisIt and ParaView. Instructions for downloading this software can be found at their respective websites:
 
 VisIt: https://wci.llnl.gov/simulation/computer-codes/visit/
+\
 ParaView: http://www.paraview.org/
 
 To get you started, here is a brief tutorial on how to use VisIt to visualize your simulation results. For more detailed instructions, please consult the [VisIt manual](https://wci.llnl.gov/simulation/computer-codes/visit/manuals).

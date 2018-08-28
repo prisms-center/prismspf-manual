@@ -2308,15 +2308,15 @@
       <type>double</type>
       <name>weightedDistanceFromNucleusCenter</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>a085c6d5a2423f0824496c070b897a689</anchor>
-      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, double &gt; q_point_loc, const unsigned int var_index) const</arglist>
+      <anchor>ac748c4b702fd66a25c042e91a653913c</anchor>
+      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Tensor&lt; 2, dim, double &gt; rotation_matrix, const dealii::Point&lt; dim, double &gt; q_point_loc, const unsigned int var_index) const</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>dealii::VectorizedArray&lt; double &gt;</type>
       <name>weightedDistanceFromNucleusCenter</name>
       <anchorfile>class_matrix_free_p_d_e.html</anchorfile>
-      <anchor>aa4124e202b82f453af69bfc76410dc3f</anchor>
-      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc, const unsigned int var_index) const</arglist>
+      <anchor>ab40dee24df25818235fa5271b3d21586</anchor>
+      <arglist>(const dealii::Point&lt; dim, double &gt; center, const std::vector&lt; double &gt; semiaxes, const dealii::Tensor&lt; 2, dim, double &gt; rotation_matrix, const dealii::Point&lt; dim, dealii::VectorizedArray&lt; double &gt; &gt; q_point_loc, const unsigned int var_index) const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual double</type>
@@ -3116,6 +3116,13 @@
       <name>orderParameterIndex</name>
       <anchorfile>structnucleus.html</anchorfile>
       <anchor>a795391fbe43042c5f491c8d08d24a88c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>random_number</name>
+      <anchorfile>structnucleus.html</anchorfile>
+      <anchor>ac7def79a1ec52596446d0555c9322586</anchor>
       <arglist></arglist>
     </member>
   </compound>

@@ -1,14 +1,13 @@
 error: Tag file `/opt/software/numerics/dealiiDir/doc/doxygen/deal.tag' does not exist or is not a file. Skipping it...
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/app_files/app_files.md:279: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/frontpage.md:4: warning: Found unknown command `\emph'
-/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:26: warning: Found unknown command `\beta'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:41: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:45: warning: Found unknown command `\emph'
-/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/input_file/input_file.md:623: warning: Found unknown command `\emph'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/input_file/input_file.md:756: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/app_files/app_files.md:279: warning: Found unknown command `\emph'
-/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/input_file/input_file.md:623: warning: Found unknown command `\emph'
-/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:26: warning: Found unknown command `\beta'
+/Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/input_file/input_file.md:756: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:41: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/user_manual/running_apps/running_apps.md:45: warning: Found unknown command `\emph'
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/landing_page.md:7: warning: explicit link request to 'DE' could not be resolved
 /Users/stephendewitt/Documents/workspace/PRISMS_workspace/prismspf-manual/landing_page.md:7: warning: explicit link request to 'DE' could not be resolved
+error: Project logo '../phaseField_dev/prisms_pf_user_guide_files/logo_pic.png' specified by PROJECT_LOGO does not exist!
