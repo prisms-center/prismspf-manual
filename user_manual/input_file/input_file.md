@@ -167,11 +167,11 @@ Maximum nonlinear solver iterations | Any positive integer | no | 100 | The maxi
 | --------------|---------|----------|---------|----------------------------------------------------|
 Tolerance type | ABSOLUTE_RESIDUAL, RELATIVE_RESIDUAL_CHANGE, ABSOLUTE_SOLUTION_CHANGE | no | ABSOLUTE_SOLUTION_CHANGE | Sets whether to use an absolute tolerance on the L2 norm of the residual for the nonlinear solver (ABSOLUTE_RESIDUAL), the relative change in the L2 norm of the residual between nonlinear solver iterations (RELATIVE_RESIDUAL_CHANGE), or the absolute change in the L2 norm of the residual between nonlinear solver iterations (ABSOLUTE_RESIDUAL_CHANGE).
 Tolerance value | Any positive real number | no | 1e-10 | The tolerance for the nonlinear solver.
-Use backtracking line search damping | Boolean | true | Whether to use a backtracking line-search to find the best choice of the damping coefficient.
+Use backtracking line search damping | Boolean | no | true | Whether to use a backtracking line-search to find the best choice of the damping coefficient.
 Backtracking step size modifier | Floating point number between 0 and 1 | no | 0.5 | The constant that determines how much the step size decreases per backtrack. The 'tau' parameter.
 Backtracking residual decrease coefficient | Floating point number between 0 and 1 | no | 1.0 | The constant that determines how much the residual must decrease to be accepted as sufficient. The 'c' parameter.
-Constant damping value | Floating point number between 0 and 1 | no | The constant damping value to be used if the backtrace line-search approach isn't used.
-Use Laplace's equation to determine the initial guess | Boolean | no | Whether to use the solution of Laplace's equation instead of the IC in ICs_and_BCs.cc as the initial guess for nonlinear, TIME_INDEPENDENT equations. This guarantees smoothness and compliance with BCs. The value of this parameter is ignored for nonlinear AUXILIARY equations.
+Constant damping value | Floating point number between 0 and 1 | no | 1.0 | The constant damping value to be used if the backtrace line-search approach isn't used.
+Use Laplace's equation to determine the initial guess | Boolean | no | false | Whether to use the solution of Laplace's equation instead of the IC in ICs_and_BCs.cc as the initial guess for nonlinear, TIME_INDEPENDENT equations. This guarantees smoothness and compliance with BCs. The value of this parameter is ignored for nonlinear AUXILIARY equations.
 
 ### Output (optional)
 | Name          | Options | Required | Default | Description |
