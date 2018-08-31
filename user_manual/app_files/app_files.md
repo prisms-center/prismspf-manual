@@ -10,7 +10,7 @@ A very brief description of the purpose of each of these files is below, an in-d
 - customPDE.h: Contains the prototypes of the functions for the application, also contains declarations of the model constants given in the input file.
 - main.cc: Main C++ function that controls the flow of the simulation. Identical for all the example applications and it is unlikely that users will need to modify it.
 
-In all of these files, the user can access user inputs from parameters.in via the ''userInputs'' object (e.g. the domain size, the time step size). See the documentation entry for userInputParameters for a list of variable names inside ''userInputs''.
+In all of these files, the user can access user inputs from parameters.in via the userInputs object (e.g. the domain size, the time step size). See the documentation entry for userInputParameters for a list of variable names inside ''userInputs''.
 
 ## equations.cc
 The file ''equations.cc'' contains a list of the variables in the model equations and their attributes as well as the residuals for the model equations. The file contains four functions: loadVariableAttributes, explicitEquationRHS, nonExplicitEquationRHS, and equationLHS.
@@ -23,12 +23,15 @@ To modify the functions in this file, one needs to be familiar with the weak for
 
 and
 
-\f$\int_{\Omega}   w  c^{n+1}  ~dV = \int_{\Omega}   w \underbrace{c^{n}}_{eq_c} +  \nabla w   \underbrace{(-\Delta t M_{c})~ [~(f_{\alpha,cc}^n(1-H^{n+1})+f_{\beta,cc}^n H^{n+1}) \nabla c + ~((f_{\beta,c}^n-f_{\alpha,c}^n)H^{n+1}_{,\eta} \nabla \eta) ] }_{eqx_{c}} ~dV \f$
+\f[
+
+]$\int_{\Omega}   w  c^{n+1}  ~dV = \int_{\Omega}   w \underbrace{c^{n}}_{eq_c} +  \nabla w   \underbrace{(-\Delta t M_{c})~ [~(f_{\alpha,cc}^n(1-H^{n+1})+f_{\beta,cc}^n H^{n+1}) \nabla c + ~((f_{\beta,c}^n-f_{\alpha,c}^n)H^{n+1}_{,\eta} \nabla \eta) ] }_{eqx_{c}} ~dV
+\f]
 
 for the Allen-Cahn and Cahn-Hilliard equation, respectively. Each of the terms in the governing equation is marked with an underbrace. The terms multiplied by the test function are referred to as the value terms and the terms multiplied by the gradient of the test function are referred to as the gradient terms.
 
 ### loadVariableAttributes
-Here is the 'loadVariableAttributes' function for the coupled Allen-Cahn/Cahn-Hilliard example application:
+Here is the loadVariableAttributes function for the coupled Allen-Cahn/Cahn-Hilliard example application:
 ```
 void variableAttributeLoader::loadVariableAttributes(){
 	// Variable 0
@@ -53,20 +56,20 @@ This function specifies the model variables and their attributes. In this case, 
 
 | Function          | Options | Required | Default | Description |
 | --------------|---------|----------|---------|----------------------------------------------------|
-set_variable_name | String | no | var  | Sets the name of the variable. This name is used in 'parameters.in' as well as during output.
+set_variable_name | [String] | no | var  | Sets the name of the variable. This name is used in 'parameters.in' as well as during output.
 set_variable_type | SCALAR, VECTOR | no | SCALAR  | Sets whether the variable is a scalar or a vector.
 set_variable_equation_type | EXPLICIT_TIME_DEPENDENT, AUXILIARY, TIME_INDEPENDENT | no | EXPLICIT_TIME_DEPENDENT  | Sets whether the governing equation for the variable is a time-dependent PDE (EXPLICIT_TIME_DEPENDENT), a time-independent PDE that does not require a linear solve (AUXILIARY) or a time independent PDE that does require a (non)linear solve (TIME_INDEPENDENT).
-set_dependencies_value_term_RHS | [a string] | yes | | Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
-set_dependencies_gradient_term_RHS | [a string] | yes | | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
-set_dependencies_value_term_LHS | [a string] | no | "" | Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses. (Only needed for TIME_INDEPENDENT equations.)
-set_dependencies_gradient_term_LHS | [a string] | no | "" | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses. (Only needed for TIME_INDEPENDENT equations.)
+set_dependencies_value_term_RHS | String | yes | N/A| Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
+set_dependencies_gradient_term_RHS | String | yes | N/A | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
+set_dependencies_value_term_LHS | String | no | [empty] | Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses. (Only needed for TIME_INDEPENDENT equations.)
+set_dependencies_gradient_term_LHS | String | no | [empty] | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses. (Only needed for TIME_INDEPENDENT equations.)
 set_allowed_to_nucleate | Boolean | no | false | Sets whether the nucleation algorithms should be activated for this variable. (Only needed when nucleation is desired).
 set_need_value_nucleation | Boolean | no | false | Sets whether the value of the variable is needed to calculate the nucleation probability in the 'nucleation.cc' file. (Only needed when nucleation is desired).
 
 Some of these function calls are not present in the 'equations.cc' file for the coupledCahnHilliardAllenCahn application. Use of the LHS function calls can be found in the preciptiateEvolution application (among others) and use the nucleation function calls can be found the nucleationModel and nucleationModel_preferential applications.
 
 ### explicitEquationRHS
-The 'explicitEquationRHS' function is where the terms in the RHS of the governing equations for EXPLICIT_TIME_DEPENDENT equations are entered. The terms in the RHS of other equations are entered into the 'nonExplicitEquationRHS' function. Here is the 'explicitEquationRHS' function from the coupled Allen-Cahn/Cahn-Hilliard example application:
+The explicitEquationRHS function is where the terms in the RHS of the governing equations for EXPLICIT_TIME_DEPENDENT equations are entered. The terms in the RHS of other equations are entered into the nonExplicitEquationRHS function. Here is the explicitEquationRHS function from the coupled Allen-Cahn/Cahn-Hilliard example application:
 ```
 template <int dim, int degree>
 void customPDE<dim,degree>::explicitEquationRHS(variableContainer<dim,degree,dealii::VectorizedArray<double> > & variable_list,
@@ -117,48 +120,48 @@ variable_list.set_scalar_gradient_term_RHS(1,eqx_n);
 }
 ```
 
-In this function the residuals at a particular quadrature point are calculated. The inputs to this function are a list of the model variable values and derivatives, variable_list and a point giving access to (x,y,z) coordinates, q_point_loc. The residual terms are added to variable_list as the output. The first few lines of the function set more convenient names for the variables and their derivatives. By convention, the value of the variable is denoted by the variable name (c for the concentration and n for the structural order parameter in this case), the list of first derivatives is denoted by the variable name followed by an ''x'', and second derivatives are denoted by the variable name followed by ''xx''. Each variable in variable can be accessed by the index it was given in loadVariableAttributes. The variable value and the derivatives can be accessed through the get_scalar_value,  get_scalar_gradient, and get_scalar_hessian object members for scalar variables and the  get_vector_value,  get_vector_gradient, and get_vector_hessian functions. The data type for the value of a scalar variable is scalarvalueType (a scalar), the data type for the first derivatives of a scalar variable is scalargradType (a vector with a length equal to the number of dimensions), and the data type for the second derivatives of a scalar variable is scalarhessType (a matrix with a size equal to the number of dimensions by the number of dimensions). For vector variables, the data types are vectorvalueType (a vector with length equal to the number of dimensions), vectorgradType (a matrix with a size equal to the number of dimensions by the number of dimensions), and vectorgradType (a rank-three tensor with a size in each direction equal to the number of dimensions).
+In this function the equation terms at a particular quadrature point are calculated. The inputs to this function are a list of the model variable values and derivatives, variable_list and a point giving access to (x,y,z) coordinates, q_point_loc. The equation terms are added to variable_list as the output. The first few lines of the function set more convenient names for the variables and their derivatives. By convention, the value of the variable is denoted by the variable name (c for the concentration and n for the structural order parameter in this case), the list of first derivatives is denoted by the variable name followed by an ''x'', and second derivatives are denoted by the variable name followed by ''xx''. Each variable in variable can be accessed by the index it was given in loadVariableAttributes. The variable value and the derivatives can be accessed through the get_scalar_value,  get_scalar_gradient, and get_scalar_hessian object members for scalar variables and the  get_vector_value,  get_vector_gradient, and get_vector_hessian functions. The data type for the value of a scalar variable is scalarvalueType (a scalar), the data type for the first derivatives of a scalar variable is scalargradType (a vector with a length equal to the number of dimensions), and the data type for the second derivatives of a scalar variable is scalarhessType (a matrix with a size equal to the number of dimensions by the number of dimensions). For vector variables, the data types are vectorvalueType (a vector with length equal to the number of dimensions), vectorgradType (a matrix with a size equal to the number of dimensions by the number of dimensions), and vectorgradType (a rank-three tensor with a size in each direction equal to the number of dimensions).
 
-After the nicknames for the field variables are set, the residual terms are calculated (including some intermediate variables, such as the free energies and the interpolation functions in the example above). These use the same six data types discussed in the preceding paragraph. The model variables given in 'parameters.in' can be used to define the residual terms.
+After the nicknames for the field variables are set, the equation terms are calculated (including some intermediate variables, such as the free energies and the interpolation functions in the example above). These use the same six data types discussed in the preceding paragraph. The model variables given in 'parameters.in' can be used to define the residual terms.
 
 Finally, the terms for the governing equations are submitted to variable_list, using the functions set_scalar_value_term_RHS, set_scalar_gradient_term_RHS, set_vector_value_term_RHS, and set_vector_gradient_term_RHS, once again referring the variables by their index.
 
-The nickname step can be skipped, if desired, although the code is generally more readable with nicknames (and the performance overhead is minimal). An example without nicknames for the fields can be found in the grainGrowth application, where loops over the ten variables are easier to construct when not declaring all of the variables at once. One word of caution, though: calling set_scalar_value_term_RHS and set_scalar_gradient_term_RHS overwrites the value and gradient of the variable, respectively (and same for the variants for vectors). Thus, either the residuals need to be cached and then set after all the residuals have been calculated (as is done in the grainGrowth application) or the values and gradients need to be cached before setting the residuals (as is done with the standard nicknaming approach).
+The nickname step can be skipped, if desired, although the code is generally more readable with nicknames (and the performance is in some cases better using the nicknames). An example without nicknames for the fields can be found in the grainGrowth application, where loops over the ten variables are easier to construct when not declaring all of the variables at once. One word of caution, though: calling set_scalar_value_term_RHS and set_scalar_gradient_term_RHS overwrites the value and gradient of the variable, respectively (and same for the variants for vectors). Thus, either the equation terms need to be cached and then set after all the equation terms have been calculated (as is done in the grainGrowth application) or the values and gradients need to be cached before setting the equation terms (as is done with the standard nicknaming approach).
 
 #### A note on types
 The deal.II library uses a data structure called a VectorizedArray to store the variable values and their derivatives. This data structured in optimized for modern vectorized processors, giving a substantial speedup in some cases. However, this data structure can complicate things slightly. One complicating factor is that VectorizedArrays can't always be added, subtracted, multiplied, or divided with more standard data types like doubles. For this reason, you will see the ''constV(argument)'' function scattered throughout the code. This function turns a non-VectorizedArray into a VectorizedArray. To be safe, you can always encase non-VectorizedArrays with ''constV()'' when they share an operation with a VectorizedArray. A second complication is that not all of the standard mathematical operations are available for VectorizedArrays. The basic trigonometric functions are available, as are exponentials and square roots. However, hyperbolic tangents are not. If needed, they must be constructed from exponents (or by iterating through the VectorizedArray, see below). A third complication is that conditional statements involving VectorizedArrays are not allowed. To perform a conditional statement, you must iterate through the VectorizedArray. To do still, construct a for loop where the maximum index is [variable name].n_array_elements. For examples of this, refer to the postprocessing file for the grainGrowth app or the seedNucleus function in 'equations.cc' in the nucleationModel app. For more details on the deal.II implementation of VectorizedArrays (including a list of mathematical operations that are allowed), please visit [the relevant deal.II documentation page](https://www.dealii.org/8.4.0/doxygen/deal.II/classVectorizedArray.html).
 
 
 ### nonExplicitEquationRHS
-The 'nonExplicitEquationRHS' function is where the terms in the RHS of the governing equations for AUXILIARY and TIME_INDEPENDENT equations are entered. The terms in the RHS of EXPLICIT_TIME_DEPENDENT equations are entered into the 'explicitEquationRHS' function. The structure and use is otherwise identical to 'explicitEquationRHS'. Examples of apps where this function is used include cahnHilliard (for an AUXILIARY equation) and MgNd_precipitate_single_Bppp (for AUXILIARY and TIME_INDEPENDENT equations).
+The 'nonExplicitEquationRHS' function is where the terms in the RHS of the governing equations for AUXILIARY and TIME_INDEPENDENT equations are entered. The terms in the RHS of EXPLICIT_TIME_DEPENDENT equations are entered into the explicitEquationRHS function. The structure and use is otherwise identical to explicitEquationRHS. Examples of apps where this function is used include cahnHilliard (for an AUXILIARY equation) and MgNd_precipitate_single_Bppp (for AUXILIARY and TIME_INDEPENDENT equations).
 
 ### equationLHS
 In the coupledCahnHilliardAllenCahn app, the equationLHS function is empty because it is only needed for TIME_INDEPENDENT PDEs (or more specifically, when a non-trivial matrix inversion needs to be performed). Here we go through the equationLHS function from the precipitateEvolution application, where the equation for mechanical equilibrium is TIME_INDEPENDENT.
 
 From the formulation file in the precipitateEvolution application, the governing equation for the mechanical displacement is:
-\f$
+\f[
 R(u) = \int_{\Omega}   \nabla w :  C(\eta_1, \eta_2, \eta_3) : \left( \epsilon - \epsilon^0(c,\eta_1, \eta_2, \eta_3)\right) ~dV = 0
-\f$
+\f]
 
 In PRISMS-PF, matrix inversion problems are always written as Newton's method iterations. For linear equations, like the one above, the solution is reached in a single Newton step. The reason for this approach is two-fold. First, it provides an identical user interface for linear and nonlinear problems. Second, it enables the efficient handling of constraints for when inhomogeneous Dirichlet boundary conditions are used.
 
 To write the above equations in terms of a Newton iteration, the solution, \f$u\f$, can be written as the sum of an initial guess, \f$u_0\f$, and an update, \f$\Delta u\f$:
 
-\f$
+\f[
 R(u) = R(u_0 + \Delta u) = R(u_0) +  \int_{\Omega} \left. \frac{\delta R(u)}{\delta u}\right|_{u=u_0} \Delta u ~dV = 0
-\f$
+\f]
 
 In this case, the equation is linear and the variation derivative is trivial:
 
-\f$
+\f[
 R(u_0 + \Delta u) =  \int_{\Omega}   \nabla w :  C(\eta_1, \eta_2, \eta_3) : \left( \epsilon(u_0 + \Delta u) - \epsilon^0(c,\eta_1, \eta_2, \eta_3)\right) ~dV = \int_{\Omega}   \nabla w :  C(\eta_1, \eta_2, \eta_3) : \left( \epsilon(u_0) + \epsilon(\Delta u) - \epsilon^0(c,\eta_1, \eta_2, \eta_3)\right) ~dV = 0
-\f$
+\f]
 
 Rearranging yields:
 
-\f$
+\f[
 \int_{\Omega} \nabla w : \underbrace{C : \nabla (\epsilon(\Delta u))}_{eqx_{u}^{LHS}} dV = -\int_{\Omega}   \nabla w : \underbrace{C :(\epsilon(u_0)-\epsilon^0)}_{eqx_{u}^{RHS}} ~dV
-\f$
+\f]
 
 The above values of \f$eqx_{u}^{LHS}\f$ and \f$eqx_{u}^{RHS}\f$ are used to define the residuals in the equations.h file. A similar process can be undertaken for other TIME_INDEPENDENT problems.
 
@@ -215,7 +218,7 @@ variable_list.set_vector_gradient_term_LHS(4,eqx_Du);
 }
 ```
 
-Like the functions for the RHS, equationLHS takes variables_list and q_point_loc as inputs. However, because only one TIME_INDEPENDENT equation is solved at a time, the output are the terms for a single governing equation. As in \emph{residualRHS}, the model variable values and derivatives are given convenient names at the start of the file. The equationLHS function has a new option for getting variable values and derivatives, here one can access the change in the value of one of the variables or its derivatives. The function name is ```get_change_in_vector_gradient``` above. The other options are ```get_change_in_scalar_value```, ```get_change_in_scalar_gradient```, ```get_change_in_scalar_hessian```, ```get_change_in_vector_value```, and ```get_change_in_vector_hessian```.  Similar to the RHS functions, the value of eqx_Du is set and then used to set the appropriate residual for variables_list (in this case the vector residual term for the fourth variable).
+Like the functions for the RHS, equationLHS takes variables_list and q_point_loc as inputs. However, because only one TIME_INDEPENDENT equation is solved at a time, the output are the terms for a single governing equation. As in explicitEquationRHS and nonExplicitEquationRHS, the model variable values and derivatives are given convenient names at the start of the file. The equationLHS function has a new option for getting variable values and derivatives, here one can access the change in the value of one of the variables or its derivatives. The function name is ```get_change_in_vector_gradient``` above. The other options are ```get_change_in_scalar_value```, ```get_change_in_scalar_gradient```, ```get_change_in_scalar_hessian```, ```get_change_in_vector_value```, and ```get_change_in_vector_hessian```.  Similar to the RHS functions, the value of eqx_Du is set and then used to set the appropriate residual for variables_list (in this case the vector residual term for the fourth variable).
 
 If multiple TIME_INDEPENDENT equations need to be solved, you will need to use conditional statements to calculate the proper residual depending on the elliptic equation being solved. The index of the field being solved can be accessed using the ```this-$>$currentFieldIndex``` statement.
 
@@ -294,7 +297,7 @@ else {
       }
 ```
 
-The model constants defined in ''parameters.in'' can be used in the initial condition function (or boundary condition function), just as in the equation functions in ''equations.cc''.
+The model constants defined in parameters.in can be used in the initial condition function (or boundary condition function), just as in the equation functions in equations.cc.
 
 ### setNonUniformDirichletBCs
 This function is needed when one or more boundaries are set to NON_UNIFORM_DIRICHLET. These functions are very similar to the initial condition functions above, the user sets an expression for ```scalar_BC``` or ```vector_BC``` at point ```p```. Once again, the variable ```index``` is used to differentiate between variables based on their index from the top of the 'equations.cc' file. For Dirichlet boundary conditions that vary in time, the current time can be accessed via the variable ```time```.
@@ -330,14 +333,14 @@ void customPDE<dim,degree>::setNonUniformDirichletBCs(const dealii::Point<dim> &
 ```
 
 ## postprocess.cc
-Unlike the files discussed so far in this section, the 'postprocess.cc' file is optional. This file allows users to specify fields other than the primary model variable to output. It also includes an option to integrate over a field variable (e.g. to check conservation of a field). In the example problems, this file is often used to calculate the total free energy of the system, which should be monotonically decreasing for most phase field problems. It also is convenient for calculating somewhat complicated expressions such as chemical potentials, stresses, and strains.
+Unlike the files discussed so far in this section, the postprocess.cc file is optional. This file allows users to specify fields other than the primary model variable to output. It also includes an option to integrate over a field variable (e.g. to check conservation of a field). In the example problems, this file is often used to calculate the total free energy of the system, which should be monotonically decreasing for most phase field problems. It also is convenient for calculating somewhat complicated expressions such as chemical potentials, stresses, and strains.
 
 Note: Two restrictions are currently in place for the postprocessor. First, postprocessing variables can only be scalars, not vectors. Second, the postprocessor won't work if the primary model variable with index zero is a vector. (This is because postprocessor uses the mesh of the zeroth primary variable to calculate and output the postprocessed field.) These restrictions will be lifted in future versions of PRISMS-PF.
 
 The file contains two functions: loadPostProcessorVariableAttributes and postProcessedFields.
 
 ### loadPostProcessorVariableAttributes
-Similar to the 'equations.cc' file, 'postprocess.cc' begins with a function called loadPostProcessorVariableAttributes, which sets the attributes of the postprocessing variables. Here is the loadPostProcessorVariableAttributes function from the coupledCahnHilliardAllenCahn application, where the postprocessed field is ```f_tot```, the total free energy:
+Similar to the equations.cc file, postprocess.cc begins with a function called loadPostProcessorVariableAttributes, which sets the attributes of the postprocessing variables. Here is the loadPostProcessorVariableAttributes function from the coupledCahnHilliardAllenCahn application, where the postprocessed field is ```f_tot```, the total free energy:
 ```
 void variableAttributeLoader::loadPostProcessorVariableAttributes(){
 
@@ -357,12 +360,12 @@ void variableAttributeLoader::loadPostProcessorVariableAttributes(){
 | --------------|---------|----------|---------|----------------------------------------------------|
 set_variable_name | String | no | var  | Sets the name of the variable.
 set_variable_type | SCALAR | no | SCALAR  | Sets whether the variable is a scalar or a vector. Only SCALAR is currently allowed.
-set_dependencies_value_term_RHS | [a string] | yes | | Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
-set_dependencies_gradient_term_RHS | [a string] | yes | | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
+set_dependencies_value_term_RHS | String | yes | | Sets which variables and their derivatives are needed to calculate the value term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
+set_dependencies_gradient_term_RHS | String | yes | | Sets which variables and their derivatives are needed to calculate the gradient term for the RHS. Variables are referenced by their names. First derivatives are referenced by ```grad``` and then the variable name in parentheses. Second derivatives are referenced by ```hess``` and then the variable name in parentheses.
 set_output_integral | Boolean | no | false | Sets whether the integral of the variable should be calculated and written to a file named 'integratedFields.txt'.
 
 ### postProcessedFields
-The second function in the 'postprocess.h' file is similar to the residual functions in 'equations.h'. The primary difference is that, while the primary model fields are read in from ```variable_list```, the residuals are submitted to ```pp_variable_list```. Otherwise, the structure is similar and expressions can be copied from one function to another.
+The second function in the postprocess.h file is similar to the residual functions in equations.h. The primary difference is that, while the primary model fields are read in from ```variable_list```, the residuals are submitted to ```pp_variable_list```. Otherwise, the structure is similar and expressions can be copied from one function to another.
 
 Here is the postProcessedFields from the coupledCahnHilliardAllenCahn application:
 ```
@@ -407,9 +410,9 @@ pp_variable_list.set_scalar_value_term_RHS(0, f_tot);
 ```
 
 ## nucleation.cc
-The 'nucleation.cc' file is also an optional file that is only needed when explcit nucleation is needed for the application. It contains the function getNucleationProbability, which calculates the probability of nucleation in a given volume element ```dV``` at a particular point in space ```p``` at time ```this-$>$currentTime```. Please refer to Note 3 [on the input file page ](https://prisms-center.github.io/phaseField/doxygen_files/input_file.html) for a description of the nucleation model in PRISMS-PF.
+The nucleation.cc file is also an optional file that is only needed when explicit nucleation is needed for the application. It contains the function getNucleationProbability, which calculates the probability of nucleation in a given volume element ```dV``` at a particular point in space ```p``` at time ```this-$>$currentTime```. Please refer to Note 6 [on the input file page ](https://prisms-center.github.io/phaseField/doxygen_files/input_file.html) for a description of the nucleation model in PRISMS-PF.
 
-The values of the primary field variables can be accessed through the ```variable_value``` input, using the variable index from 'equations.c'. Only variables where set_need_value_nucleation was set to true in the loadVariableAttributes function in 'equations.cc' can be accessed.
+The values of the primary field variables can be accessed through the ```variable_value``` input, using the variable index from equations.cc. Only variables where set_need_value_nucleation was set to true in the loadVariableAttributes function in equations.cc can be accessed.
 
 Here is getNucleationProbability from the nucleationModel application:
 ```
@@ -428,7 +431,7 @@ double customPDE<dim,degree>::getNucleationProbability(variableValueContainer va
 ```
 
 ## customPDE.h
-The final file in each application folder that users often need to change is 'customPDE.h'. This file contains the declarations for all of the functions and variables specific to the application. In C++ terminology, it is the declaration for the customPDE class, which is a subclass of MatrixFreePDE. For most users, the relevant section is labeled as ''Model constants specific to this subclass'', which is where the model constants from 'parameters.in' are extracted from the ```userInputs``` object. There is a separate function to extract constants of each type. These are:
+The final file in each application folder that users often need to change is customPDE.h. This file contains the declarations for all of the functions and variables specific to the application. In C++ terminology, it is the declaration for the customPDE class, which is a subclass of MatrixFreePDE. For most users, the relevant section is labeled as ''Model constants specific to this subclass'', which is where the model constants from parameters.in are extracted from the ```userInputs``` object. There is a separate function to extract constants of each type. These are:
 
 - get\_model\_constant\_double
 - get\_model\_constant\_int
@@ -437,9 +440,9 @@ The final file in each application folder that users often need to change is 'cu
 - get\_model\_constant\_rank\_2\_tensor
 - get\_model\_constant\_elasticity\_tensor
 
-Each of these take the variable name from 'parameters.in' as an input and output the appropriate type.
+Each of these take the variable name from parameters.in as an input and output the appropriate type.
 
-Here is 'customPDE.h' from the preciptiateEvolution application, where all of the different types of constants are used:
+Here is customPDE.h from the preciptiateEvolution application, where all of the different types of constants are used:
 ```
 #include "../../include/matrixFreePDE.h"
 
@@ -531,4 +534,4 @@ This file can also be used to declare new member functions for the application. 
 Furthermore, for advanced users, the customPDE class can be used to override MatrixFreePDE functions from the core PRISMS-PF library. One example of this is in the CHiMaD_benchmark6b application, where the makeTriangulation function is overridden to create a non-square mesh.
 
 ## main.cc
-The final C++ file in the application directory is the 'main.cc' file. This file controls the overall flow of the code and is unlikely to be modified by most users. For all of the example applications, 'main.cc' is identical. One situation where a user may want to modify 'main.cc' is if they wanted to run several simulations with different parameter sets for one execution of the code.
+The final C++ file in the application directory is the main.cc file. This file controls the overall flow of the code and is unlikely to be modified by most users. For all of the example applications, main.cc is identical. One situation where a user may want to modify 'main.cc' is if they wanted to run several simulations with different parameter sets for one execution of the code.
